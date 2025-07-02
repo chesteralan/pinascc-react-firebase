@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -60,7 +61,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-gray-700 text-center text-gray-500">
-          <p>Privacy Policy | Terms & Conditions | FAQ</p>
+          <p>
+            <Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link> |
+            <Link to="/terms-and-conditions" className="hover:text-white"> Terms & Conditions</Link> |
+            <Link to="/faq" className="hover:text-white"> FAQ</Link>
+          </p>
           <p>
             &copy; {new Date().getFullYear()} Pinas.cc. All rights reserved.
           </p>

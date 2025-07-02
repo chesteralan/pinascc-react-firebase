@@ -57,6 +57,9 @@ import ForumsAndQAPage from "./pages/SocialAndCommunity/ForumsAndQAPage";
 import KabayanSpotlightPage from "./pages/SocialAndCommunity/KabayanSpotlightPage";
 import SocialFeedsPage from "./pages/SocialAndCommunity/SocialFeedsPage";
 import FilipinoMythCreaturesPage from "./pages/VideoAndVisualsHub/FilipinoMythCreaturesPage";
+import PrivacyPolicyPage from "./pages/Legal/PrivacyPolicyPage";
+import TermsAndConditionsPage from "./pages/Legal/TermsAndConditionsPage";
+import FAQPage from "./pages/Legal/FAQPage";
 import HistoryIn60SecondsPage from "./pages/VideoAndVisualsHub/HistoryIn60SecondsPage";
 import HowToBeFilipinoSeriesPage from "./pages/VideoAndVisualsHub/HowToBeFilipinoSeriesPage";
 import ProvinceClipsPage from "./pages/VideoAndVisualsHub/ProvinceClipsPage";
@@ -313,8 +316,20 @@ const App: React.FC = () => {
           element={<HowToBeFilipinoSeriesPage />}
         />
         <Route
-          path="/video-and-visuals-hub/province-clips"
+          path="/video-visuals-hub/province-clips"
           element={<ProvinceClipsPage />}
+        />
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicyPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/terms-and-conditions"
+          element={<TermsAndConditionsPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/faq"
+          element={<FAQPage darkMode={darkMode} />}
         />
       </Routes>
     </Router>
