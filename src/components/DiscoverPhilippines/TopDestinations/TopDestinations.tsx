@@ -70,11 +70,6 @@ const TopDestinations: React.FC = () => {
           <DestinationCard {...destinations[4]} />
           <DestinationCard {...destinations[5]} />
         </div>
-        <div className="text-center mt-12">
-          <button className="bg-red-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-red-600 transition duration-300">
-            More Destination
-          </button>
-        </div>
       </div>
     </section>
   );
