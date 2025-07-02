@@ -96,7 +96,7 @@ const App: React.FC = () => {
           element={<JobsAndEconomyPage darkMode={darkMode} />}
         />
         <Route
-          path="/govt-services"
+          path="/government-services"
           element={<GovtServicesSimplifiedPage darkMode={darkMode} />}
         />
         <Route
@@ -204,19 +204,19 @@ const App: React.FC = () => {
           element={<TravelRequirementsPage />}
         />
         <Route
-          path="/govt-services-simplified/govt-help-sections"
+          path="/government-services/govt-help-sections"
           element={<GovtHelpSectionsPage />}
         />
         <Route
-          path="/govt-services-simplified/hotline-directory"
+          path="/government-services/hotline-directory"
           element={<HotlineDirectoryPage />}
         />
         <Route
-          path="/govt-services-simplified/passport-visa-guides"
+          path="/government-services/passport-visa-guides"
           element={<PassportVisaGuidesPage />}
         />
         <Route
-          path="/govt-services-simplified/step-by-step-guides"
+          path="/government-services/step-by-step-guides"
           element={<StepByStepGuidesPage />}
         />
         <Route

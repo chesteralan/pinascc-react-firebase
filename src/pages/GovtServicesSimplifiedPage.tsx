@@ -15,7 +15,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link
-            to="/govt-services-simplified/govt-help-sections"
+            to="/government-services/govt-help-sections"
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
@@ -29,7 +29,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             </p>
           </Link>
           <Link
-            to="/govt-services-simplified/hotline-directory"
+            to="/government-services/hotline-directory"
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
@@ -43,7 +43,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             </p>
           </Link>
           <Link
-            to="/govt-services-simplified/passport-visa-guides"
+            to="/government-services/passport-visa-guides"
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
@@ -57,7 +57,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             </p>
           </Link>
           <Link
-            to="/govt-services-simplified/step-by-step-guides"
+            to="/government-services/step-by-step-guides"
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img

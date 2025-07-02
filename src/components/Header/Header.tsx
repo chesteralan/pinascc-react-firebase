@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
               className={`absolute hidden group-hover:block top-full w-48 ${darkMode ? "bg-gray-800" : "bg-white"} shadow-lg rounded-md py-2`}
             >
               <Link
-                to="/govt-services"
+                to="/government-services"
                 className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
               >
                 GOV'T SERVICES
