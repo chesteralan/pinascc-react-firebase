@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
         className={`container mx-auto px-4 py-2 flex justify-between items-center ${darkMode ? "bg-gray-900" : ""}`}
       >
         <div className="flex items-center">
-          <img src="/logo.png" alt="Pinas.cc" className="h-8" />
+          <img src="/images/logo.png" alt="Pinas.cc" className="h-8" />
           <span
             className={`ml-2 text-xl font-bold ${scrolled ? (darkMode ? "text-white" : "text-gray-800") : "text-white"}`}
           >

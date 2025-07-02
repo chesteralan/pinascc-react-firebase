@@ -19,7 +19,7 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Common Phrases"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -31,7 +31,7 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-2.jpg"
+              src="/images/gallery-2.jpg"
               alt="Festivals by Month"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -45,7 +45,7 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-3.jpg"
+              src="/images/gallery-3.jpg"
               alt="Filipino Fashion"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -59,7 +59,7 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-4.jpg"
+              src="/images/gallery-4.jpg"
               alt="Filipino Traditions"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -73,7 +73,7 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-5.jpg"
+              src="/images/gallery-5.jpg"
               alt="Filipino Values"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -87,7 +87,7 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-6.jpg"
+              src="/images/gallery-6.jpg"
               alt="National Symbols"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

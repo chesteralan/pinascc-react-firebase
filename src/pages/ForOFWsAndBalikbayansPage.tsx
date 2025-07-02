@@ -19,7 +19,7 @@ const ForOFWsAndBalikbayansPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/offer-1.jpg"
+              src="/images/offer-1.jpg"
               alt="Money Remittance Tips"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -31,7 +31,7 @@ const ForOFWsAndBalikbayansPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/offer-2.jpg"
+              src="/images/offer-2.jpg"
               alt="OFW Rights"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -45,7 +45,7 @@ const ForOFWsAndBalikbayansPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/offer-3.jpg"
+              src="/images/offer-3.jpg"
               alt="Pinas Feels"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -57,7 +57,7 @@ const ForOFWsAndBalikbayansPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/post-1.jpg"
+              src="/images/post-1.jpg"
               alt="Support Networks Abroad"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -71,7 +71,7 @@ const ForOFWsAndBalikbayansPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/post-2.jpg"
+              src="/images/post-2.jpg"
               alt="Travel Requirements"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

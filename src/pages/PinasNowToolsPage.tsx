@@ -15,7 +15,7 @@ const PinasNowToolsPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Barangay Locator"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -31,7 +31,7 @@ const PinasNowToolsPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-2.jpg"
+              src="/images/gallery-2.jpg"
               alt="Currency Converter"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -45,7 +45,7 @@ const PinasNowToolsPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-3.jpg"
+              src="/images/gallery-3.jpg"
               alt="Filipino Time Converter"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -59,7 +59,7 @@ const PinasNowToolsPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-4.jpg"
+              src="/images/gallery-4.jpg"
               alt="Language Translator"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -73,7 +73,7 @@ const PinasNowToolsPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-5.jpg"
+              src="/images/gallery-5.jpg"
               alt="Live Weather"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -87,7 +87,7 @@ const PinasNowToolsPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-6.jpg"
+              src="/images/gallery-6.jpg"
               alt="National Holidays Calendar"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

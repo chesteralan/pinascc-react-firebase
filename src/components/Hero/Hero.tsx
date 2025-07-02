@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <div
       className="bg-cover bg-center min-h-screen flex flex-col justify-between"
-      style={{ backgroundImage: "url('/bg_1.jpg.webp')" }}
+      style={{ backgroundImage: "url('/images/bg_1.jpg.webp')" }}
     >
       <div className="flex-grow flex flex-col justify-center items-center text-white pt-32 pb-20 text-center">
         <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">

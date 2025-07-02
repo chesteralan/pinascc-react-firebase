@@ -19,7 +19,7 @@ const NewsAndHappeningsPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Business & Tech"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -33,7 +33,7 @@ const NewsAndHappeningsPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-2.jpg"
+              src="/images/gallery-2.jpg"
               alt="Local Gov't Announcements"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -47,7 +47,7 @@ const NewsAndHappeningsPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-3.jpg"
+              src="/images/gallery-3.jpg"
               alt="National Headlines"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -61,7 +61,7 @@ const NewsAndHappeningsPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-4.jpg"
+              src="/images/gallery-4.jpg"
               alt="Positive Stories"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

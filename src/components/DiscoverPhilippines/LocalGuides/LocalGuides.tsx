@@ -25,7 +25,7 @@ const LocalGuides: React.FC = () => {
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Palawan Guide"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -45,7 +45,7 @@ const LocalGuides: React.FC = () => {
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-2.jpg"
+              src="/images/gallery-2.jpg"
               alt="Cebu Guide"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -65,7 +65,7 @@ const LocalGuides: React.FC = () => {
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-3.jpg"
+              src="/images/gallery-3.jpg"
               alt="Baguio Guide"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -85,7 +85,7 @@ const LocalGuides: React.FC = () => {
           {/* Card 5 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-5.jpg"
+              src="/images/gallery-5.jpg"
               alt="Batanes Guide"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -105,7 +105,7 @@ const LocalGuides: React.FC = () => {
           {/* Card 6 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-6.jpg"
+              src="/images/gallery-6.jpg"
               alt="Davao Guide"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -125,7 +125,7 @@ const LocalGuides: React.FC = () => {
           {/* Card 4 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-4.jpg"
+              src="/images/gallery-4.jpg"
               alt="Siargao Guide"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
