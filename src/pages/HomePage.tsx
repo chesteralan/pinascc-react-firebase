@@ -6,7 +6,6 @@ import KnowThePhilippines from "../components/KnowThePhilippines";
 import TodayInPinas from "../components/TodayInPinas";
 import TopDestinations from "../components/DiscoverPhilippines/TopDestinations";
 import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
 
 const HomePage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
@@ -18,7 +17,6 @@ const HomePage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       <TodayInPinas />
       <TopDestinations />
       <Newsletter />
-      <Footer />
     </>
   );
 };

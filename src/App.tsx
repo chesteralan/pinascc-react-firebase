@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
@@ -64,23 +64,14 @@ import HistoryIn60SecondsPage from "./pages/VideoAndVisualsHub/HistoryIn60Second
 import HowToBeFilipinoSeriesPage from "./pages/VideoAndVisualsHub/HowToBeFilipinoSeriesPage";
 import ProvinceClipsPage from "./pages/VideoAndVisualsHub/ProvinceClipsPage";
 import SocialAndCommunityPage from "./pages/SocialAndCommunityPage";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(true);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const darkMode = true;
 
   return (
     <Router>
       <Header darkMode={darkMode} /> {/* Pass darkMode prop to Header */}
-      <button
-        onClick={toggleDarkMode}
-        style={{ position: "fixed", top: "10px", right: "10px", zIndex: 1000 }}
-      >
-        Toggle Dark Mode
-      </button>
       <Routes>
         <Route path="/" element={<HomePage darkMode={darkMode} />} />
         <Route
@@ -327,11 +318,9 @@ const App: React.FC = () => {
           path="/terms-and-conditions"
           element={<TermsAndConditionsPage darkMode={darkMode} />}
         />
-        <Route
-          path="/faq"
-          element={<FAQPage darkMode={darkMode} />}
-        />
+        <Route path="/faq" element={<FAQPage darkMode={darkMode} />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

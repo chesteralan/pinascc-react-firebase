@@ -26,11 +26,11 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? (darkMode ? "bg-gray-800 shadow-md" : "bg-white shadow-md") : "bg-transparent"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? (darkMode ? "bg-gray-900 shadow-md" : "bg-white shadow-md") : "bg-transparent"}`}
     >
       {/* Top Bar */}
       <div
-        className={`text-sm py-2 ${scrolled ? "hidden" : "block"} ${darkMode ? "bg-gray-900 text-white" : "bg-gray-700 text-white"}`}
+        className={`text-sm py-2 ${scrolled ? "hidden" : "block"} ${darkMode ? "bg-gray-800 text-white" : "bg-gray-700 text-white"}`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-4">
@@ -39,19 +39,19 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
             <span>📍 Philippines</span>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="#" className="hover:text-gray-300">
+            <a href="#" className="hover:text-gray-500">
               f
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#" className="hover:text-gray-500">
               t
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#" className="hover:text-gray-500">
               i
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#" className="hover:text-gray-500">
               in
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="#" className="hover:text-gray-500">
               🔍
             </a>
           </div>
@@ -73,37 +73,43 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
         <nav className="hidden md:flex items-center space-x-4">
           <Link
             to="/"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+            className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
           >
             HOME
           </Link>
           <Link
             to="/discover-philippines"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+            className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
           >
             DISCOVER PH
           </Link>
           <Link
             to="/culture-lifestyle"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+            className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
           >
             CULTURE & LIFESTYLE
           </Link>
           <Link
             to="/food-recipes"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+            className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
           >
             FOOD & RECIPES
           </Link>
           <Link
             to="/news-happenings"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+            className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
           >
             NEWS & HAPPENINGS
           </Link>
+          <Link
+            to="/jobs-economy"
+            className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+          >
+            JOBS & ECONOMY
+          </Link>
           <div className="relative group">
             <button
-              className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+              className={`hover:text-gray-500 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
             >
               MORE
             </button>
@@ -111,38 +117,32 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
               className={`absolute hidden group-hover:block top-full w-48 ${darkMode ? "bg-gray-800" : "bg-white"} shadow-lg rounded-md py-2`}
             >
               <Link
-                to="/jobs-economy"
-                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
-              >
-                JOBS & ECONOMY
-              </Link>
-              <Link
                 to="/govt-services"
-                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
               >
                 GOV'T SERVICES
               </Link>
               <Link
                 to="/ofws-balikbayans"
-                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
               >
                 FOR OFWS
               </Link>
               <Link
                 to="/pinas-now-tools"
-                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
               >
                 PINAS NOW TOOLS
               </Link>
               <Link
                 to="/video-visuals-hub"
-                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
               >
                 VIDEO & VISUALS HUB
               </Link>
               <Link
                 to="/social-and-community"
-                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
               >
                 SOCIAL & COMMUNITY
               </Link>
