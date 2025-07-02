@@ -101,24 +101,53 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
           >
             NEWS & HAPPENINGS
           </Link>
-          <Link
-            to="/jobs-economy"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
-          >
-            JOBS & ECONOMY
-          </Link>
-          <Link
-            to="/govt-services"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
-          >
-            GOV'T SERVICES
-          </Link>
-          <Link
-            to="/ofws-balikbayans"
-            className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
-          >
-            FOR OFWS
-          </Link>
+          <div className="relative group">
+            <button
+              className={`hover:text-gray-800 ${scrolled ? (darkMode ? "text-gray-400" : "text-gray-600") : "text-white"}`}
+            >
+              MORE
+            </button>
+            <div
+              className={`absolute hidden group-hover:block top-full w-48 ${darkMode ? "bg-gray-800" : "bg-white"} shadow-lg rounded-md py-2`}
+            >
+              <Link
+                to="/jobs-economy"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+              >
+                JOBS & ECONOMY
+              </Link>
+              <Link
+                to="/govt-services"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+              >
+                GOV'T SERVICES
+              </Link>
+              <Link
+                to="/ofws-balikbayans"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+              >
+                FOR OFWS
+              </Link>
+              <Link
+                to="/pinas-now-tools"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+              >
+                PINAS NOW TOOLS
+              </Link>
+              <Link
+                to="/video-visuals-hub"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+              >
+                VIDEO & VISUALS HUB
+              </Link>
+              <Link
+                to="/social-and-community"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-800"}`}
+              >
+                SOCIAL & COMMUNITY
+              </Link>
+            </div>
+          </div>
         </nav>
         <button className="hidden md:block bg-red-500 text-white px-4 py-2 rounded">
           CONTACT US
