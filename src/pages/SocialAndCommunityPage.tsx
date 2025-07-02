@@ -19,7 +19,7 @@ const SocialAndCommunityPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Filipino Memes & Viral Moments"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -35,7 +35,7 @@ const SocialAndCommunityPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-2.jpg"
+              src="/images/gallery-2.jpg"
               alt="Forums / Q&A"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -47,7 +47,7 @@ const SocialAndCommunityPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-3.jpg"
+              src="/images/gallery-3.jpg"
               alt="Kabayan Spotlight"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -61,7 +61,7 @@ const SocialAndCommunityPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/gallery-4.jpg"
+              src="/images/gallery-4.jpg"
               alt="Social Media Feeds"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

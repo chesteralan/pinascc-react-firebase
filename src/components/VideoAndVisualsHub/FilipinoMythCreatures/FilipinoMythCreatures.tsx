@@ -26,7 +26,7 @@ const FilipinoMythCreatures: React.FC = () => {
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Aswang"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -44,7 +44,7 @@ const FilipinoMythCreatures: React.FC = () => {
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-2.jpg"
+              src="/images/gallery-2.jpg"
               alt="Manananggal"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -64,7 +64,7 @@ const FilipinoMythCreatures: React.FC = () => {
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-3.jpg"
+              src="/images/gallery-3.jpg"
               alt="Tikbalang"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -84,7 +84,7 @@ const FilipinoMythCreatures: React.FC = () => {
           {/* Card 5 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-5.jpg"
+              src="/images/gallery-5.jpg"
               alt="Duwende"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -102,7 +102,7 @@ const FilipinoMythCreatures: React.FC = () => {
           {/* Card 6 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-6.jpg"
+              src="/images/gallery-6.jpg"
               alt="Sirena"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
@@ -120,7 +120,7 @@ const FilipinoMythCreatures: React.FC = () => {
           {/* Card 4 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <img
-              src="/gallery-4.jpg"
+              src="/images/gallery-4.jpg"
               alt="Kapre"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />

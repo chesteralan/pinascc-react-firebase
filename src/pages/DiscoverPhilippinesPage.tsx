@@ -19,7 +19,7 @@ const DiscoverPhilippinesPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/dest-1.jpg"
+              src="/images/dest-1.jpg"
               alt="Best Travel Months"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -31,7 +31,7 @@ const DiscoverPhilippinesPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/dest-2.jpg"
+              src="/images/dest-2.jpg"
               alt="Hidden Gems"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -45,7 +45,7 @@ const DiscoverPhilippinesPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/dest-3.jpg"
+              src="/images/dest-3.jpg"
               alt="Interactive Map"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -57,7 +57,7 @@ const DiscoverPhilippinesPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/dest-4.jpg"
+              src="/images/dest-4.jpg"
               alt="Local Guides"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -73,7 +73,7 @@ const DiscoverPhilippinesPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/dest-boracay.jpg"
+              src="/images/dest-boracay.jpg"
               alt="Top Destinations"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -87,7 +87,7 @@ const DiscoverPhilippinesPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/dest-palawan.jpg"
+              src="/images/dest-palawan.jpg"
               alt="Visa Info"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

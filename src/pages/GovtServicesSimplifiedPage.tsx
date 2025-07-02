@@ -19,7 +19,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/post-1.jpg"
+              src="/images/post-1.jpg"
               alt="Government Help Sections"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -33,7 +33,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/post-2.jpg"
+              src="/images/post-2.jpg"
               alt="Hotline Directory"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -47,7 +47,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/post-3.jpg"
+              src="/images/post-3.jpg"
               alt="Passport & Visa Guides"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -61,7 +61,7 @@ const GovtServicesSimplifiedPage: React.FC<{ darkMode: boolean }> = ({
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/cta-img.jpg"
+              src="/images/cta-img.jpg"
               alt="Step-by-Step Guides"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

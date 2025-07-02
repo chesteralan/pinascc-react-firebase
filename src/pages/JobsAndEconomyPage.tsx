@@ -17,7 +17,7 @@ const JobsAndEconomyPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/holiday-bg.jpg"
+              src="/images/holiday-bg.jpg"
               alt="Freelancing & Digital Nomadism"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -33,7 +33,7 @@ const JobsAndEconomyPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/hero-bg.jpg"
+              src="/images/hero-bg.jpg"
               alt="Job Hunting Tips"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -45,7 +45,7 @@ const JobsAndEconomyPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/cta-img.jpg"
+              src="/images/cta-img.jpg"
               alt="Remote Job Boards"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -59,7 +59,7 @@ const JobsAndEconomyPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/post-3.jpg"
+              src="/images/post-3.jpg"
               alt="Skills Development"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />

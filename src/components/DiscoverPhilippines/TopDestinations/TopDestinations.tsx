@@ -6,37 +6,37 @@ const TopDestinations: React.FC = () => {
     {
       country: "PHILIPPINES",
       city: "Boracay",
-      image: "/dest-boracay.jpg",
+      image: "/images/dest-boracay.jpg",
       rating: 5,
     },
     {
       country: "PHILIPPINES",
       city: "Palawan",
-      image: "/dest-palawan.jpg",
+      image: "/images/dest-palawan.jpg",
       rating: 5,
     },
     {
       country: "PHILIPPINES",
       city: "Siargao",
-      image: "/dest-siargao.jpg",
+      image: "/images/dest-siargao.jpg",
       rating: 4,
     },
     {
       country: "PHILIPPINES",
       city: "Banaue",
-      image: "/dest-banaue.jpg",
+      image: "/images/dest-banaue.jpg",
       rating: 5,
     },
     {
       country: "PHILIPPINES",
       city: "Cebu",
-      image: "/dest-1.jpg",
+      image: "/images/dest-1.jpg",
       rating: 4,
     },
     {
       country: "PHILIPPINES",
       city: "Baguio",
-      image: "/dest-2.jpg",
+      image: "/images/dest-2.jpg",
       rating: 4,
     },
   ];

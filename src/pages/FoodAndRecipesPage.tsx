@@ -17,7 +17,7 @@ const FoodAndRecipesPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/pkg-1.jpg"
+              src="/images/pkg-1.jpg"
               alt="Filipino Fusion Cuisine"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -29,7 +29,7 @@ const FoodAndRecipesPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/pkg-2.jpg"
+              src="/images/pkg-2.jpg"
               alt="Must-Try Street Foods"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -43,7 +43,7 @@ const FoodAndRecipesPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/pkg-3.jpg"
+              src="/images/pkg-3.jpg"
               alt="OFW Grocery Hacks"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -57,7 +57,7 @@ const FoodAndRecipesPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/offer-1.jpg"
+              src="/images/offer-1.jpg"
               alt="Top Regional Dishes"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
@@ -71,7 +71,7 @@ const FoodAndRecipesPage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group"
           >
             <img
-              src="/offer-2.jpg"
+              src="/images/offer-2.jpg"
               alt="Weekly Featured Recipes"
               className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300"
             />
