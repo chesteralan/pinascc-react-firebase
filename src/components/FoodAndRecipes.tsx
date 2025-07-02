@@ -1,9 +1,9 @@
-import React from 'react';
-import TopRegionalDishes from './TopRegionalDishes';
-import MustTryStreetFoods from './MustTryStreetFoods';
-import FilipinoFusionCuisine from './FilipinoFusionCuisine';
-import WeeklyFeaturedRecipes from './WeeklyFeaturedRecipes';
-import OFWGroceryHacks from './OFWGroceryHacks';
+import React from "react";
+import TopRegionalDishes from "./TopRegionalDishes";
+import MustTryStreetFoods from "./MustTryStreetFoods";
+import FilipinoFusionCuisine from "./FilipinoFusionCuisine";
+import WeeklyFeaturedRecipes from "./WeeklyFeaturedRecipes";
+import OFWGroceryHacks from "./OFWGroceryHacks";
 
 const FoodAndRecipes: React.FC = () => {
   return (

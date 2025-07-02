@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface DestinationCardProps {
   country: string;
@@ -7,7 +7,12 @@ interface DestinationCardProps {
   rating: number;
 }
 
-const DestinationCard: React.FC<DestinationCardProps> = ({ country, city, image, rating }) => {
+const DestinationCard: React.FC<DestinationCardProps> = ({
+  country,
+  city,
+  image,
+  rating,
+}) => {
   return (
     <div className="relative rounded-lg overflow-hidden shadow-lg">
       <img src={image} alt={city} className="w-full h-64 object-cover" />
@@ -20,7 +25,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ country, city, image,
           {[...Array(5)].map((_, i) => (
             <svg
               key={i}
-              className={`w-5 h-5 ${i < rating ? 'text-yellow-400' : 'text-gray-400'}`}
+              className={`w-5 h-5 ${i < rating ? "text-yellow-400" : "text-gray-400"}`}
               fill="currentColor"
               viewBox="0 0 20 20"
             >

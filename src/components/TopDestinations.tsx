@@ -1,13 +1,32 @@
-
-import React from 'react';
-import DestinationCard from './DestinationCard/DestinationCard';
+import React from "react";
+import DestinationCard from "./DestinationCard/DestinationCard";
 
 const TopDestinations: React.FC = () => {
   const destinations = [
-    { country: 'THAILAND', city: 'Disney Land', image: '/dest-boracay.jpg', rating: 5 },
-    { country: 'NORWAY', city: 'Besseggen Ridge', image: '/dest-palawan.jpg', rating: 5 },
-    { country: 'NEW ZEALAND', city: 'Oxolotan City', image: '/dest-siargao.jpg', rating: 4 },
-    { country: 'SINGAPORE', city: 'Marina Bay Sand City', image: '/dest-banaue.jpg', rating: 5 },
+    {
+      country: "THAILAND",
+      city: "Disney Land",
+      image: "/dest-boracay.jpg",
+      rating: 5,
+    },
+    {
+      country: "NORWAY",
+      city: "Besseggen Ridge",
+      image: "/dest-palawan.jpg",
+      rating: 5,
+    },
+    {
+      country: "NEW ZEALAND",
+      city: "Oxolotan City",
+      image: "/dest-siargao.jpg",
+      rating: 4,
+    },
+    {
+      country: "SINGAPORE",
+      city: "Marina Bay Sand City",
+      image: "/dest-banaue.jpg",
+      rating: 5,
+    },
   ];
 
   return (
@@ -15,11 +34,17 @@ const TopDestinations: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div className="text-center md:text-left">
-            <p className="text-red-500 uppercase text-sm font-bold mb-2 relative before:content-[''] before:absolute before:w-8 before:h-0.5 before:bg-red-500 before:left-0 before:top-1/2 before:-translate-x-full before:mr-2">Popular Destination</p>
-            <h2 className="text-4xl font-extrabold text-gray-900">Top Notch Destination</h2>
+            <p className="text-red-500 uppercase text-sm font-bold mb-2 relative before:content-[''] before:absolute before:w-8 before:h-0.5 before:bg-red-500 before:left-0 before:top-1/2 before:-translate-x-full before:mr-2">
+              Popular Destination
+            </p>
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              Top Notch Destination
+            </h2>
           </div>
           <p className="text-gray-600 mt-4 md:mt-0 md:w-1/2 text-center md:text-left">
-            Aperiam sociosqu urna praesent, tristique, corrupti condimentum asperiores platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas provident laoreet nesciunt.
+            Aperiam sociosqu urna praesent, tristique, corrupti condimentum
+            asperiores platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas
+            provident laoreet nesciunt.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">

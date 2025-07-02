@@ -1,8 +1,8 @@
-import React from 'react';
-import RemoteJobBoards from './RemoteJobBoards';
-import JobHuntingTips from './JobHuntingTips';
-import SkillsDevelopment from './SkillsDevelopment';
-import FreelancingDigitalNomadism from './FreelancingDigitalNomadism';
+import React from "react";
+import RemoteJobBoards from "./RemoteJobBoards";
+import JobHuntingTips from "./JobHuntingTips";
+import SkillsDevelopment from "./SkillsDevelopment";
+import FreelancingDigitalNomadism from "./FreelancingDigitalNomadism";
 
 const JobsAndEconomy: React.FC = () => {
   return (

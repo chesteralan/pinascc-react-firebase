@@ -1,9 +1,15 @@
+import React from "react";
 
-import React from 'react';
-
-const QuickAccessTile: React.FC<{ title: string; icon: string; link: string }> = ({ title, icon, link }) => {
+const QuickAccessTile: React.FC<{
+  title: string;
+  icon: string;
+  link: string;
+}> = ({ title, icon, link }) => {
   return (
-    <a href={link} className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+    <a
+      href={link}
+      className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+    >
       <div className="text-4xl mb-2">{icon}</div>
       <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
     </a>
@@ -12,12 +18,12 @@ const QuickAccessTile: React.FC<{ title: string; icon: string; link: string }> =
 
 const QuickAccessTiles: React.FC = () => {
   const tiles = [
-    { title: 'Travel', icon: '✈️', link: '#travel' },
-    { title: 'Food', icon: '🍽️', link: '#food' },
-    { title: 'Culture', icon: '🎭', link: '#culture' },
-    { title: 'Jobs', icon: '💼', link: '#jobs' },
-    { title: 'Government Services', icon: '🏛️', link: '#gov-services' },
-    { title: 'News', icon: '📰', link: '#news' },
+    { title: "Travel", icon: "✈️", link: "#travel" },
+    { title: "Food", icon: "🍽️", link: "#food" },
+    { title: "Culture", icon: "🎭", link: "#culture" },
+    { title: "Jobs", icon: "💼", link: "#jobs" },
+    { title: "Government Services", icon: "🏛️", link: "#gov-services" },
+    { title: "News", icon: "📰", link: "#news" },
   ];
 
   return (
