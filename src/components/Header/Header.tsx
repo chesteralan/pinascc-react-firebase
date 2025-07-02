@@ -149,9 +149,12 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
             </div>
           </div>
         </nav>
-        <button className="hidden md:block bg-red-500 text-white px-4 py-2 rounded">
+        <Link
+          to="/contact-us"
+          className="hidden md:block bg-red-500 text-white px-4 py-2 rounded"
+        >
           CONTACT US
-        </button>
+        </Link>
         <button className="md:hidden">
           <svg
             className="w-6 h-6"

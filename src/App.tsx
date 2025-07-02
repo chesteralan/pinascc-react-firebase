@@ -64,6 +64,7 @@ import HistoryIn60SecondsPage from "./pages/VideoAndVisualsHub/HistoryIn60Second
 import HowToBeFilipinoSeriesPage from "./pages/VideoAndVisualsHub/HowToBeFilipinoSeriesPage";
 import ProvinceClipsPage from "./pages/VideoAndVisualsHub/ProvinceClipsPage";
 import SocialAndCommunityPage from "./pages/SocialAndCommunityPage";
+import ContactUsPage from "./pages/ContactUsPage";
 import Footer from "./components/Footer";
 
 const App: React.FC = () => {
@@ -319,6 +320,10 @@ const App: React.FC = () => {
           element={<TermsAndConditionsPage darkMode={darkMode} />}
         />
         <Route path="/faq" element={<FAQPage darkMode={darkMode} />} />
+        <Route
+          path="/contact-us"
+          element={<ContactUsPage darkMode={darkMode} />}
+        />
       </Routes>
       <Footer />
     </Router>
