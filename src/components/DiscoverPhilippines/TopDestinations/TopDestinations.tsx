@@ -4,60 +4,71 @@ import DestinationCard from "./DestinationCard";
 const TopDestinations: React.FC = () => {
   const destinations = [
     {
-      country: "THAILAND",
-      city: "Disney Land",
+      country: "PHILIPPINES",
+      city: "Boracay",
       image: "/dest-boracay.jpg",
       rating: 5,
     },
     {
-      country: "NORWAY",
-      city: "Besseggen Ridge",
+      country: "PHILIPPINES",
+      city: "Palawan",
       image: "/dest-palawan.jpg",
       rating: 5,
     },
     {
-      country: "NEW ZEALAND",
-      city: "Oxolotan City",
+      country: "PHILIPPINES",
+      city: "Siargao",
       image: "/dest-siargao.jpg",
       rating: 4,
     },
     {
-      country: "SINGAPORE",
-      city: "Marina Bay Sand City",
+      country: "PHILIPPINES",
+      city: "Banaue",
       image: "/dest-banaue.jpg",
       rating: 5,
+    },
+    {
+      country: "PHILIPPINES",
+      city: "Cebu",
+      image: "/dest-1.jpg",
+      rating: 4,
+    },
+    {
+      country: "PHILIPPINES",
+      city: "Baguio",
+      image: "/dest-2.jpg",
+      rating: 4,
     },
   ];
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-          <div className="text-center md:text-left">
-            <p className="text-red-500 uppercase text-sm font-bold mb-2 relative before:content-[''] before:absolute before:w-8 before:h-0.5 before:bg-red-500 before:left-0 before:top-1/2 before:-translate-x-full before:mr-2">
-              Popular Destination
+    <section className="py-12 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Area */}
+        <div className="flex justify-between items-start mb-10">
+          <div className="flex flex-col">
+            <p className="text-sm font-bold uppercase text-blue-600 mb-2">
+              FEATURED DESTINATIONS
             </p>
-            <h2 className="text-4xl font-extrabold text-gray-900">
-              Top Notch Destination
+            <h2 className="text-4xl font-extrabold uppercase text-gray-900 leading-tight">
+              TOP DESTINATIONS IN THE PHILIPPINES
             </h2>
           </div>
-          <p className="text-gray-600 mt-4 md:mt-0 md:w-1/2 text-center md:text-left">
-            Aperiam sociosqu urna praesent, tristique, corrupti condimentum
-            asperiores platea ipsum ad arcu. Nostrud. Aut nostrum, ornare quas
-            provident laoreet nesciunt.
+          <p className="text-base text-gray-500 max-w-md text-right leading-relaxed">
+            Explore the most breathtaking and popular travel spots across the
+            Philippines. From pristine beaches to lush mountains, discover your
+            next adventure.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div className="md:col-span-2 lg:col-span-2">
-            <DestinationCard {...destinations[0]} />
-          </div>
-          <div className="md:col-span-1 lg:col-span-1">
-            <DestinationCard {...destinations[1]} />
-          </div>
-          <div className="md:col-span-1 lg:col-span-1 grid grid-rows-2 gap-6">
-            <DestinationCard {...destinations[2]} />
-            <DestinationCard {...destinations[3]} />
-          </div>
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <DestinationCard {...destinations[0]} />
+          <DestinationCard {...destinations[1]} />
+          <DestinationCard {...destinations[2]} />
+          <DestinationCard {...destinations[3]} />
+          <DestinationCard {...destinations[4]} />
+          <DestinationCard {...destinations[5]} />
         </div>
         <div className="text-center mt-12">
           <button className="bg-red-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-red-600 transition duration-300">

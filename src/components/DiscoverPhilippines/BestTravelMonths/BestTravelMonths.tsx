@@ -123,24 +123,22 @@ const BestTravelMonths: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 4 (Horizontal - spans all columns) */}
-          <div className="md:col-span-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <div className="flex flex-col md:flex-row">
-              <img
-                src="/gallery-4.jpg"
-                alt="Overall"
-                className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="p-6 flex-1">
-                <div className="absolute top-4 left-4 md:static md:mb-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
-                  Overall
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  December - February
-                </h3>
-                <div className="flex items-center text-yellow-500 text-sm">
-                  <span className="mr-1">⭐</span> Cool & Dry
-                </div>
+          {/* Card 4 (Vertical) */}
+          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+            <img
+              src="/gallery-4.jpg"
+              alt="Overall"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
+              Overall
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                December - February
+              </h3>
+              <div className="flex items-center text-yellow-500 text-sm">
+                <span className="mr-1">⭐</span> Cool & Dry
               </div>
             </div>
           </div>
