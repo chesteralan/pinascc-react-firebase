@@ -16,7 +16,7 @@ import VideoAndVisualsHub from "./components/VideoAndVisualsHub";
 import Newsletter from "./components/Newsletter";
 import SocialAndCommunity from "./components/SocialAndCommunity";
 import Footer from "./components/Footer";
-import TopDestinations from "./components/TopDestinations";
+import TopDestinations from "./components/DiscoverPhilippines/TopDestinations";
 
 const App: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import DestinationCard from "./DestinationCard/DestinationCard";
+import DestinationCard from "./DestinationCard";
 
 const TopDestinations: React.FC = () => {
   const destinations = [
