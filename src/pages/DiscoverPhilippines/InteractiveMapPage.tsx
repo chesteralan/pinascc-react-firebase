@@ -1,5 +1,5 @@
-import React from 'react';
-import InteractiveMap from '../../components/DiscoverPhilippines/InteractiveMap/InteractiveMap';
+import React from "react";
+import InteractiveMap from "../../components/DiscoverPhilippines/InteractiveMap/InteractiveMap";
 
 const InteractiveMapPage: React.FC = () => {
   return (

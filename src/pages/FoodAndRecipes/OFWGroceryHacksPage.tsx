@@ -1,5 +1,5 @@
-import React from 'react';
-import OFWGroceryHacks from '../../components/FoodAndRecipes/OFWGroceryHacks/OFWGroceryHacks';
+import React from "react";
+import OFWGroceryHacks from "../../components/FoodAndRecipes/OFWGroceryHacks/OFWGroceryHacks";
 
 const OFWGroceryHacksPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import MustTryStreetFoods from '../../components/FoodAndRecipes/MustTryStreetFoods/MustTryStreetFoods';
+import React from "react";
+import MustTryStreetFoods from "../../components/FoodAndRecipes/MustTryStreetFoods/MustTryStreetFoods";
 
 const MustTryStreetFoodsPage: React.FC = () => {
   return (

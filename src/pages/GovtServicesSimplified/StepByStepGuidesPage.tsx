@@ -1,5 +1,5 @@
-import React from 'react';
-import StepByStepGuides from '../../components/GovtServicesSimplified/StepByStepGuides/StepByStepGuides';
+import React from "react";
+import StepByStepGuides from "../../components/GovtServicesSimplified/StepByStepGuides/StepByStepGuides";
 
 const StepByStepGuidesPage: React.FC = () => {
   return (

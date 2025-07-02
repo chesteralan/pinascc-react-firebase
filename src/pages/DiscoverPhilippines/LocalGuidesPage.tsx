@@ -1,5 +1,5 @@
-import React from 'react';
-import LocalGuides from '../../components/DiscoverPhilippines/LocalGuides/LocalGuides';
+import React from "react";
+import LocalGuides from "../../components/DiscoverPhilippines/LocalGuides/LocalGuides";
 
 const LocalGuidesPage: React.FC = () => {
   return (

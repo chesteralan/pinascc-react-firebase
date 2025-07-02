@@ -1,5 +1,5 @@
-import React from 'react';
-import TravelRequirements from '../../components/ForOFWsAndBalikbayans/TravelRequirements/TravelRequirements';
+import React from "react";
+import TravelRequirements from "../../components/ForOFWsAndBalikbayans/TravelRequirements/TravelRequirements";
 
 const TravelRequirementsPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import NationalHeadlines from '../../components/NewsAndHappenings/NationalHeadlines/NationalHeadlines';
+import React from "react";
+import NationalHeadlines from "../../components/NewsAndHappenings/NationalHeadlines/NationalHeadlines";
 
 const NationalHeadlinesPage: React.FC = () => {
   return (

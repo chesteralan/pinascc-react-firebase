@@ -1,5 +1,5 @@
-import React from 'react';
-import FilipinoTimeConverter from '../../components/PinasNowTools/FilipinoTimeConverter/FilipinoTimeConverter';
+import React from "react";
+import FilipinoTimeConverter from "../../components/PinasNowTools/FilipinoTimeConverter/FilipinoTimeConverter";
 
 const FilipinoTimeConverterPage: React.FC = () => {
   return (

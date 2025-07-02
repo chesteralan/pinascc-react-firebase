@@ -1,5 +1,5 @@
-import React from 'react';
-import NationalHolidaysCalendar from '../../components/PinasNowTools/NationalHolidaysCalendar/NationalHolidaysCalendar';
+import React from "react";
+import NationalHolidaysCalendar from "../../components/PinasNowTools/NationalHolidaysCalendar/NationalHolidaysCalendar";
 
 const NationalHolidaysCalendarPage: React.FC = () => {
   return (

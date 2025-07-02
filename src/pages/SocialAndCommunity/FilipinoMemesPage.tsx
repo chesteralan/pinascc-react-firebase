@@ -1,5 +1,5 @@
-import React from 'react';
-import FilipinoMemes from '../../components/SocialAndCommunity/FilipinoMemes/FilipinoMemes';
+import React from "react";
+import FilipinoMemes from "../../components/SocialAndCommunity/FilipinoMemes/FilipinoMemes";
 
 const FilipinoMemesPage: React.FC = () => {
   return (

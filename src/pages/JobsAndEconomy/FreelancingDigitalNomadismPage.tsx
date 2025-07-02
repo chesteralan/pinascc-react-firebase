@@ -1,5 +1,5 @@
-import React from 'react';
-import FreelancingDigitalNomadism from '../../components/JobsAndEconomy/FreelancingDigitalNomadism/FreelancingDigitalNomadism';
+import React from "react";
+import FreelancingDigitalNomadism from "../../components/JobsAndEconomy/FreelancingDigitalNomadism/FreelancingDigitalNomadism";
 
 const FreelancingDigitalNomadismPage: React.FC = () => {
   return (

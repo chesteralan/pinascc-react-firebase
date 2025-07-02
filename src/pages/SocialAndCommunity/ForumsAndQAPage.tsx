@@ -1,5 +1,5 @@
-import React from 'react';
-import ForumsAndQA from '../../components/SocialAndCommunity/ForumsAndQA/ForumsAndQA';
+import React from "react";
+import ForumsAndQA from "../../components/SocialAndCommunity/ForumsAndQA/ForumsAndQA";
 
 const ForumsAndQAPage: React.FC = () => {
   return (

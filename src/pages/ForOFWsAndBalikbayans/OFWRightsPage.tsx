@@ -1,5 +1,5 @@
-import React from 'react';
-import OFWRights from '../../components/ForOFWsAndBalikbayans/OFWRights/OFWRights';
+import React from "react";
+import OFWRights from "../../components/ForOFWsAndBalikbayans/OFWRights/OFWRights";
 
 const OFWRightsPage: React.FC = () => {
   return (

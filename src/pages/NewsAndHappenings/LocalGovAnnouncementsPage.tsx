@@ -1,5 +1,5 @@
-import React from 'react';
-import LocalGovAnnouncements from '../../components/NewsAndHappenings/LocalGovAnnouncements/LocalGovAnnouncements';
+import React from "react";
+import LocalGovAnnouncements from "../../components/NewsAndHappenings/LocalGovAnnouncements/LocalGovAnnouncements";
 
 const LocalGovAnnouncementsPage: React.FC = () => {
   return (

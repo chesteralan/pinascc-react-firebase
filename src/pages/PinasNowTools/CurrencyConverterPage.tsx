@@ -1,5 +1,5 @@
-import React from 'react';
-import CurrencyConverter from '../../components/PinasNowTools/CurrencyConverter/CurrencyConverter';
+import React from "react";
+import CurrencyConverter from "../../components/PinasNowTools/CurrencyConverter/CurrencyConverter";
 
 const CurrencyConverterPage: React.FC = () => {
   return (

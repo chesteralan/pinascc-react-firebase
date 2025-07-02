@@ -1,5 +1,5 @@
-import React from 'react';
-import BusinessAndTech from '../../components/NewsAndHappenings/BusinessAndTech/BusinessAndTech';
+import React from "react";
+import BusinessAndTech from "../../components/NewsAndHappenings/BusinessAndTech/BusinessAndTech";
 
 const BusinessAndTechPage: React.FC = () => {
   return (

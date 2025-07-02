@@ -1,5 +1,5 @@
-import React from 'react';
-import VisaInfo from '../../components/DiscoverPhilippines/VisaInfo/VisaInfo';
+import React from "react";
+import VisaInfo from "../../components/DiscoverPhilippines/VisaInfo/VisaInfo";
 
 const VisaInfoPage: React.FC = () => {
   return (

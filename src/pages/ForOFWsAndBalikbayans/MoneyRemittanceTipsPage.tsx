@@ -1,5 +1,5 @@
-import React from 'react';
-import MoneyRemittanceTips from '../../components/ForOFWsAndBalikbayans/MoneyRemittanceTips/MoneyRemittanceTips';
+import React from "react";
+import MoneyRemittanceTips from "../../components/ForOFWsAndBalikbayans/MoneyRemittanceTips/MoneyRemittanceTips";
 
 const MoneyRemittanceTipsPage: React.FC = () => {
   return (

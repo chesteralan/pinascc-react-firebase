@@ -1,5 +1,5 @@
-import React from 'react';
-import FilipinoValues from '../../components/CultureAndLifestyle/FilipinoValues/FilipinoValues';
+import React from "react";
+import FilipinoValues from "../../components/CultureAndLifestyle/FilipinoValues/FilipinoValues";
 
 const FilipinoValuesPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import ProvinceClips from '../../components/VideoAndVisualsHub/ProvinceClips/ProvinceClips';
+import React from "react";
+import ProvinceClips from "../../components/VideoAndVisualsHub/ProvinceClips/ProvinceClips";
 
 const ProvinceClipsPage: React.FC = () => {
   return (

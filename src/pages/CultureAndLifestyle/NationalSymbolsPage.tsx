@@ -1,5 +1,5 @@
-import React from 'react';
-import NationalSymbols from '../../components/CultureAndLifestyle/NationalSymbols/NationalSymbols';
+import React from "react";
+import NationalSymbols from "../../components/CultureAndLifestyle/NationalSymbols/NationalSymbols";
 
 const NationalSymbolsPage: React.FC = () => {
   return (

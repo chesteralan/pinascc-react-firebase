@@ -1,5 +1,5 @@
-import React from 'react';
-import KabayanSpotlight from '../../components/SocialAndCommunity/KabayanSpotlight/KabayanSpotlight';
+import React from "react";
+import KabayanSpotlight from "../../components/SocialAndCommunity/KabayanSpotlight/KabayanSpotlight";
 
 const KabayanSpotlightPage: React.FC = () => {
   return (

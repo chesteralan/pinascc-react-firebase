@@ -1,5 +1,5 @@
-import React from 'react';
-import PassportVisaGuides from '../../components/GovtServicesSimplified/PassportVisaGuides/PassportVisaGuides';
+import React from "react";
+import PassportVisaGuides from "../../components/GovtServicesSimplified/PassportVisaGuides/PassportVisaGuides";
 
 const PassportVisaGuidesPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import TopRegionalDishes from '../../components/FoodAndRecipes/TopRegionalDishes/TopRegionalDishes';
+import React from "react";
+import TopRegionalDishes from "../../components/FoodAndRecipes/TopRegionalDishes/TopRegionalDishes";
 
 const TopRegionalDishesPage: React.FC = () => {
   return (

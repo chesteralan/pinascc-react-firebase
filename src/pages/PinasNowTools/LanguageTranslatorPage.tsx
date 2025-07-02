@@ -1,5 +1,5 @@
-import React from 'react';
-import LanguageTranslator from '../../components/PinasNowTools/LanguageTranslator/LanguageTranslator';
+import React from "react";
+import LanguageTranslator from "../../components/PinasNowTools/LanguageTranslator/LanguageTranslator";
 
 const LanguageTranslatorPage: React.FC = () => {
   return (

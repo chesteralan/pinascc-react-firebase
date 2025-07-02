@@ -1,5 +1,5 @@
-import React from 'react';
-import TopDestinations from '../../components/DiscoverPhilippines/TopDestinations/TopDestinations';
+import React from "react";
+import TopDestinations from "../../components/DiscoverPhilippines/TopDestinations/TopDestinations";
 
 const TopDestinationsPage: React.FC = () => {
   return (

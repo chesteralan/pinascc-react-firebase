@@ -1,5 +1,5 @@
-import React from 'react';
-import BestTravelMonths from '../../components/DiscoverPhilippines/BestTravelMonths/BestTravelMonths';
+import React from "react";
+import BestTravelMonths from "../../components/DiscoverPhilippines/BestTravelMonths/BestTravelMonths";
 
 const BestTravelMonthsPage: React.FC = () => {
   return (

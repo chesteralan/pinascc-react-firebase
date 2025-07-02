@@ -1,5 +1,5 @@
-import React from 'react';
-import SupportNetworksAbroad from '../../components/ForOFWsAndBalikbayans/SupportNetworksAbroad/SupportNetworksAbroad';
+import React from "react";
+import SupportNetworksAbroad from "../../components/ForOFWsAndBalikbayans/SupportNetworksAbroad/SupportNetworksAbroad";
 
 const SupportNetworksAbroadPage: React.FC = () => {
   return (

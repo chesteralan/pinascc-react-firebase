@@ -1,5 +1,5 @@
-import React from 'react';
-import PinasFeels from '../../components/ForOFWsAndBalikbayans/PinasFeels/PinasFeels';
+import React from "react";
+import PinasFeels from "../../components/ForOFWsAndBalikbayans/PinasFeels/PinasFeels";
 
 const PinasFeelsPage: React.FC = () => {
   return (

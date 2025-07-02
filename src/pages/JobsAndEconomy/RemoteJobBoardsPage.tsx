@@ -1,5 +1,5 @@
-import React from 'react';
-import RemoteJobBoards from '../../components/JobsAndEconomy/RemoteJobBoards/RemoteJobBoards';
+import React from "react";
+import RemoteJobBoards from "../../components/JobsAndEconomy/RemoteJobBoards/RemoteJobBoards";
 
 const RemoteJobBoardsPage: React.FC = () => {
   return (

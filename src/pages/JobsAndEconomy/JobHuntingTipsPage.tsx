@@ -1,5 +1,5 @@
-import React from 'react';
-import JobHuntingTips from '../../components/JobsAndEconomy/JobHuntingTips/JobHuntingTips';
+import React from "react";
+import JobHuntingTips from "../../components/JobsAndEconomy/JobHuntingTips/JobHuntingTips";
 
 const JobHuntingTipsPage: React.FC = () => {
   return (

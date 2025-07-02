@@ -1,5 +1,5 @@
-import React from 'react';
-import FilipinoMythCreatures from '../../components/VideoAndVisualsHub/FilipinoMythCreatures/FilipinoMythCreatures';
+import React from "react";
+import FilipinoMythCreatures from "../../components/VideoAndVisualsHub/FilipinoMythCreatures/FilipinoMythCreatures";
 
 const FilipinoMythCreaturesPage: React.FC = () => {
   return (

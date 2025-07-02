@@ -1,5 +1,5 @@
-import React from 'react';
-import BarangayLocator from '../../components/PinasNowTools/BarangayLocator/BarangayLocator';
+import React from "react";
+import BarangayLocator from "../../components/PinasNowTools/BarangayLocator/BarangayLocator";
 
 const BarangayLocatorPage: React.FC = () => {
   return (

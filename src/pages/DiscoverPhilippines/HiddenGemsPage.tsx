@@ -1,5 +1,5 @@
-import React from 'react';
-import HiddenGems from '../../components/DiscoverPhilippines/HiddenGems/HiddenGems';
+import React from "react";
+import HiddenGems from "../../components/DiscoverPhilippines/HiddenGems/HiddenGems";
 
 const HiddenGemsPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import PositiveStories from '../../components/NewsAndHappenings/PositiveStories/PositiveStories';
+import React from "react";
+import PositiveStories from "../../components/NewsAndHappenings/PositiveStories/PositiveStories";
 
 const PositiveStoriesPage: React.FC = () => {
   return (

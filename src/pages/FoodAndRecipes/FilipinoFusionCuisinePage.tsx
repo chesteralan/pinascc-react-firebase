@@ -1,5 +1,5 @@
-import React from 'react';
-import FilipinoFusionCuisine from '../../components/FoodAndRecipes/FilipinoFusionCuisine/FilipinoFusionCuisine';
+import React from "react";
+import FilipinoFusionCuisine from "../../components/FoodAndRecipes/FilipinoFusionCuisine/FilipinoFusionCuisine";
 
 const FilipinoFusionCuisinePage: React.FC = () => {
   return (

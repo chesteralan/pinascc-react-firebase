@@ -1,5 +1,5 @@
-import React from 'react';
-import SkillsDevelopment from '../../components/JobsAndEconomy/SkillsDevelopment/SkillsDevelopment';
+import React from "react";
+import SkillsDevelopment from "../../components/JobsAndEconomy/SkillsDevelopment/SkillsDevelopment";
 
 const SkillsDevelopmentPage: React.FC = () => {
   return (

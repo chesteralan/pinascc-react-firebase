@@ -1,5 +1,5 @@
-import React from 'react';
-import WeeklyFeaturedRecipes from '../../components/FoodAndRecipes/WeeklyFeaturedRecipes/WeeklyFeaturedRecipes';
+import React from "react";
+import WeeklyFeaturedRecipes from "../../components/FoodAndRecipes/WeeklyFeaturedRecipes/WeeklyFeaturedRecipes";
 
 const WeeklyFeaturedRecipesPage: React.FC = () => {
   return (

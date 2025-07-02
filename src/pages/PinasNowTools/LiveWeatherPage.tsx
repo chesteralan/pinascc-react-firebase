@@ -1,5 +1,5 @@
-import React from 'react';
-import LiveWeather from '../../components/PinasNowTools/LiveWeather/LiveWeather';
+import React from "react";
+import LiveWeather from "../../components/PinasNowTools/LiveWeather/LiveWeather";
 
 const LiveWeatherPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import GovtHelpSections from '../../components/GovtServicesSimplified/GovtHelpSections/GovtHelpSections';
+import React from "react";
+import GovtHelpSections from "../../components/GovtServicesSimplified/GovtHelpSections/GovtHelpSections";
 
 const GovtHelpSectionsPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import CommonPhrases from '../../components/CultureAndLifestyle/CommonPhrases/CommonPhrases';
+import React from "react";
+import CommonPhrases from "../../components/CultureAndLifestyle/CommonPhrases/CommonPhrases";
 
 const CommonPhrasesPage: React.FC = () => {
   return (
