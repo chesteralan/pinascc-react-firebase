@@ -1,1 +1,1 @@
-export { default } from './FilipinoTraditions';
+export { default } from "./FilipinoTraditions";

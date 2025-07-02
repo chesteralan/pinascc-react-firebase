@@ -1,1 +1,1 @@
-export { default } from './JobsAndEconomy';
+export { default } from "./JobsAndEconomy";

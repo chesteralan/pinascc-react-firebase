@@ -15,8 +15,9 @@ const LocalGovAnnouncements: React.FC = () => {
             </h2>
           </div>
           <p className="text-base text-gray-500 max-w-md text-right leading-relaxed">
-            Stay informed about important announcements and initiatives from local government units.
-            Get updates on public services, community projects, and local events.
+            Stay informed about important announcements and initiatives from
+            local government units. Get updates on public services, community
+            projects, and local events.
           </p>
         </div>
 
@@ -24,12 +25,18 @@ const LocalGovAnnouncements: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-1.jpg" alt="Barangay Meeting" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-1.jpg"
+              alt="Barangay Meeting"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Barangay
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Barangay Assembly</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Barangay Assembly
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Community Updates
               </div>
@@ -38,12 +45,18 @@ const LocalGovAnnouncements: React.FC = () => {
 
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-2.jpg" alt="City Ordinance" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-2.jpg"
+              alt="City Ordinance"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               City
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">New City Ordinance</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                New City Ordinance
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Local Regulations
               </div>
@@ -52,12 +65,18 @@ const LocalGovAnnouncements: React.FC = () => {
 
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-3.jpg" alt="Provincial Project" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-3.jpg"
+              alt="Provincial Project"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Province
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Provincial Infrastructure</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Provincial Infrastructure
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Development Projects
               </div>
@@ -67,12 +86,18 @@ const LocalGovAnnouncements: React.FC = () => {
           {/* Card 4 (Horizontal - spans below Card 3) */}
           <div className="md:col-start-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden md:row-start-2 md:col-span-1 group">
             <div className="flex flex-col md:flex-row">
-              <img src="/gallery-4.jpg" alt="Public Advisory" className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+              <img
+                src="/gallery-4.jpg"
+                alt="Public Advisory"
+                className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="p-6 flex-1">
                 <div className="absolute top-4 left-4 md:static md:mb-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
                   Advisory
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Public Health Advisory</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Public Health Advisory
+                </h3>
                 <div className="flex items-center text-yellow-500 text-sm">
                   <span className="mr-1">⭐</span> Safety Guidelines
                 </div>

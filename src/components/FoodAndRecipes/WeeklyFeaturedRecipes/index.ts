@@ -1,1 +1,1 @@
-export { default } from './WeeklyFeaturedRecipes';
+export { default } from "./WeeklyFeaturedRecipes";

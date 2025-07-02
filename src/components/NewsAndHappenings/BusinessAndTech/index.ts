@@ -1,1 +1,1 @@
-export { default } from './BusinessAndTech';
+export { default } from "./BusinessAndTech";

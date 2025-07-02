@@ -1,1 +1,1 @@
-export { default } from './QuickAccessTiles';
+export { default } from "./QuickAccessTiles";

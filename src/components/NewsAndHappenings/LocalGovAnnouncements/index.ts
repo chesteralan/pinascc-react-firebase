@@ -1,1 +1,1 @@
-export { default } from './LocalGovAnnouncements';
+export { default } from "./LocalGovAnnouncements";

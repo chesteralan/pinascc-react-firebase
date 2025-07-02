@@ -1,1 +1,1 @@
-export { default } from './FilipinoMythCreatures';
+export { default } from "./FilipinoMythCreatures";

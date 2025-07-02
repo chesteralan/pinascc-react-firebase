@@ -1,1 +1,1 @@
-export { default } from './FilipinoMemes';
+export { default } from "./FilipinoMemes";

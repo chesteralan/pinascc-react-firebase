@@ -1,1 +1,1 @@
-export { default } from './MoneyRemittanceTips';
+export { default } from "./MoneyRemittanceTips";

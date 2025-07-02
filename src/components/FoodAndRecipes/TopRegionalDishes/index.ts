@@ -1,1 +1,1 @@
-export { default } from './TopRegionalDishes';
+export { default } from "./TopRegionalDishes";

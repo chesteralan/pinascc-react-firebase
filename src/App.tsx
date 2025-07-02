@@ -22,20 +22,50 @@ const App: React.FC = () => {
   return (
     <Router>
       <Header darkMode={darkMode} /> {/* Pass darkMode prop to Header */}
-      <button onClick={toggleDarkMode} style={{ position: 'fixed', top: '10px', right: '10px', zIndex: 1000 }}>
+      <button
+        onClick={toggleDarkMode}
+        style={{ position: "fixed", top: "10px", right: "10px", zIndex: 1000 }}
+      >
         Toggle Dark Mode
       </button>
       <Routes>
         <Route path="/" element={<HomePage darkMode={darkMode} />} />
-        <Route path="/discover-philippines" element={<DiscoverPhilippinesPage darkMode={darkMode} />} />
-        <Route path="/culture-lifestyle" element={<CultureAndLifestylePage darkMode={darkMode} />} />
-        <Route path="/food-recipes" element={<FoodAndRecipesPage darkMode={darkMode} />} />
-        <Route path="/news-happenings" element={<NewsAndHappeningsPage darkMode={darkMode} />} />
-        <Route path="/jobs-economy" element={<JobsAndEconomyPage darkMode={darkMode} />} />
-        <Route path="/govt-services" element={<GovtServicesSimplifiedPage darkMode={darkMode} />} />
-        <Route path="/ofws-balikbayans" element={<ForOFWsAndBalikbayansPage darkMode={darkMode} />} />
-        <Route path="/pinas-now-tools" element={<PinasNowToolsPage darkMode={darkMode} />} />
-        <Route path="/video-visuals-hub" element={<VideoAndVisualsHubPage darkMode={darkMode} />} />
+        <Route
+          path="/discover-philippines"
+          element={<DiscoverPhilippinesPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/culture-lifestyle"
+          element={<CultureAndLifestylePage darkMode={darkMode} />}
+        />
+        <Route
+          path="/food-recipes"
+          element={<FoodAndRecipesPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/news-happenings"
+          element={<NewsAndHappeningsPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/jobs-economy"
+          element={<JobsAndEconomyPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/govt-services"
+          element={<GovtServicesSimplifiedPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/ofws-balikbayans"
+          element={<ForOFWsAndBalikbayansPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/pinas-now-tools"
+          element={<PinasNowToolsPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/video-visuals-hub"
+          element={<VideoAndVisualsHubPage darkMode={darkMode} />}
+        />
       </Routes>
     </Router>
   );

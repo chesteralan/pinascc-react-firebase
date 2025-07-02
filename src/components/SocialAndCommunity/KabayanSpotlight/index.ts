@@ -1,1 +1,1 @@
-export { default } from './KabayanSpotlight';
+export { default } from "./KabayanSpotlight";

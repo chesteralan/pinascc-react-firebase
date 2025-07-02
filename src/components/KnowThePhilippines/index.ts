@@ -1,1 +1,1 @@
-export { default } from './KnowThePhilippines';
+export { default } from "./KnowThePhilippines";

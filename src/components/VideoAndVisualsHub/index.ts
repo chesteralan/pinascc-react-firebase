@@ -1,1 +1,1 @@
-export { default } from './VideoAndVisualsHub';
+export { default } from "./VideoAndVisualsHub";

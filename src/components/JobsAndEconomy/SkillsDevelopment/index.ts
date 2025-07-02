@@ -1,1 +1,1 @@
-export { default } from './SkillsDevelopment';
+export { default } from "./SkillsDevelopment";

@@ -1,1 +1,1 @@
-export { default } from './CultureAndLifestyle';
+export { default } from "./CultureAndLifestyle";

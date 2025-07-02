@@ -1,1 +1,1 @@
-export { default } from './ProvinceClips';
+export { default } from "./ProvinceClips";

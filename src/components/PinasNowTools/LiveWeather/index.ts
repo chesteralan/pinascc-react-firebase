@@ -1,1 +1,1 @@
-export { default } from './LiveWeather';
+export { default } from "./LiveWeather";

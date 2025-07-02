@@ -59,7 +59,9 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
       </div>
 
       {/* Main Header */}
-      <div className={`container mx-auto px-4 py-2 flex justify-between items-center ${darkMode ? "bg-gray-900" : ""}`}>
+      <div
+        className={`container mx-auto px-4 py-2 flex justify-between items-center ${darkMode ? "bg-gray-900" : ""}`}
+      >
         <div className="flex items-center">
           <img src="/logo.png" alt="Pinas.cc" className="h-8" />
           <span

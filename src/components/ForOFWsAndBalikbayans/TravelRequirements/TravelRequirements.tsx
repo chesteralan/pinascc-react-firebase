@@ -15,8 +15,9 @@ const TravelRequirements: React.FC = () => {
             </h2>
           </div>
           <p className="text-base text-gray-500 max-w-md text-right leading-relaxed">
-            Stay updated on the latest travel requirements for Filipinos traveling to and from the Philippines.
-            Ensure a smooth journey with accurate information on documents and protocols.
+            Stay updated on the latest travel requirements for Filipinos
+            traveling to and from the Philippines. Ensure a smooth journey with
+            accurate information on documents and protocols.
           </p>
         </div>
 
@@ -24,12 +25,18 @@ const TravelRequirements: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-1.jpg" alt="Passport" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-1.jpg"
+              alt="Passport"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Documents
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Passport Validity</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Passport Validity
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Minimum 6 Months
               </div>
@@ -38,12 +45,18 @@ const TravelRequirements: React.FC = () => {
 
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-2.jpg" alt="Visa" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-2.jpg"
+              alt="Visa"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Visa
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Visa Requirements</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Visa Requirements
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Country-Specific
               </div>
@@ -52,12 +65,18 @@ const TravelRequirements: React.FC = () => {
 
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-3.jpg" alt="Health Declaration" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-3.jpg"
+              alt="Health Declaration"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Health
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Health Declarations</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Health Declarations
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Latest Protocols
               </div>
@@ -67,12 +86,18 @@ const TravelRequirements: React.FC = () => {
           {/* Card 4 (Horizontal - spans below Card 3) */}
           <div className="md:col-start-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden md:row-start-2 md:col-span-1 group">
             <div className="flex flex-col md:flex-row">
-              <img src="/gallery-4.jpg" alt="Customs" className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+              <img
+                src="/gallery-4.jpg"
+                alt="Customs"
+                className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="p-6 flex-1">
                 <div className="absolute top-4 left-4 md:static md:mb-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
                   Customs
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Customs Regulations</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Customs Regulations
+                </h3>
                 <div className="flex items-center text-yellow-500 text-sm">
                   <span className="mr-1">⭐</span> What You Can Bring
                 </div>

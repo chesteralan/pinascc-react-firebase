@@ -15,8 +15,9 @@ const LiveWeather: React.FC = () => {
             </h2>
           </div>
           <p className="text-base text-gray-500 max-w-md text-right leading-relaxed">
-            Get real-time weather updates for major cities and tourist destinations in the Philippines.
-            Plan your activities with accurate forecasts and weather alerts.
+            Get real-time weather updates for major cities and tourist
+            destinations in the Philippines. Plan your activities with accurate
+            forecasts and weather alerts.
           </p>
         </div>
 
@@ -24,12 +25,18 @@ const LiveWeather: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-1.jpg" alt="Manila Weather" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-1.jpg"
+              alt="Manila Weather"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Manila
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Metro Manila</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Metro Manila
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> 30°C, Sunny
               </div>
@@ -38,12 +45,18 @@ const LiveWeather: React.FC = () => {
 
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-2.jpg" alt="Cebu Weather" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-2.jpg"
+              alt="Cebu Weather"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Cebu
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Cebu City</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Cebu City
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> 28°C, Partly Cloudy
               </div>
@@ -52,12 +65,18 @@ const LiveWeather: React.FC = () => {
 
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-3.jpg" alt="Boracay Weather" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-3.jpg"
+              alt="Boracay Weather"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Boracay
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Boracay Island</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Boracay Island
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> 29°C, Light Rains
               </div>
@@ -67,12 +86,18 @@ const LiveWeather: React.FC = () => {
           {/* Card 4 (Horizontal - spans below Card 3) */}
           <div className="md:col-start-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden md:row-start-2 md:col-span-1 group">
             <div className="flex flex-col md:flex-row">
-              <img src="/gallery-4.jpg" alt="Davao Weather" className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+              <img
+                src="/gallery-4.jpg"
+                alt="Davao Weather"
+                className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="p-6 flex-1">
                 <div className="absolute top-4 left-4 md:static md:mb-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
                   Davao
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Davao City</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Davao City
+                </h3>
                 <div className="flex items-center text-yellow-500 text-sm">
                   <span className="mr-1">⭐</span> 27°C, Thunderstorms
                 </div>

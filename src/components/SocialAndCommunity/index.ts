@@ -1,1 +1,1 @@
-export { default } from './SocialAndCommunity';
+export { default } from "./SocialAndCommunity";

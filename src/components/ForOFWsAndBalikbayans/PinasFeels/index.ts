@@ -1,1 +1,1 @@
-export { default } from './PinasFeels';
+export { default } from "./PinasFeels";

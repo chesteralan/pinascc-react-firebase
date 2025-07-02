@@ -1,1 +1,1 @@
-export { default } from './InteractiveMap';
+export { default } from "./InteractiveMap";

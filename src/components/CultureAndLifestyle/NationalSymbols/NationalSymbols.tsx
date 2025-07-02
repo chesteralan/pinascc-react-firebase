@@ -15,8 +15,9 @@ const NationalSymbols: React.FC = () => {
             </h2>
           </div>
           <p className="text-base text-gray-500 max-w-md text-right leading-relaxed">
-            Discover the significant national symbols of the Philippines and their profound meanings.
-            Learn about the emblems that represent the nation's heritage and aspirations.
+            Discover the significant national symbols of the Philippines and
+            their profound meanings. Learn about the emblems that represent the
+            nation's heritage and aspirations.
           </p>
         </div>
 
@@ -24,12 +25,18 @@ const NationalSymbols: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-1.jpg" alt="Philippine Flag" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-1.jpg"
+              alt="Philippine Flag"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Flag
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Philippine Flag</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Philippine Flag
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Symbol of Sovereignty
               </div>
@@ -38,12 +45,18 @@ const NationalSymbols: React.FC = () => {
 
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-2.jpg" alt="Lupang Hinirang" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-2.jpg"
+              alt="Lupang Hinirang"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Anthem
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Lupang Hinirang</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Lupang Hinirang
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> National Anthem
               </div>
@@ -52,12 +65,18 @@ const NationalSymbols: React.FC = () => {
 
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-3.jpg" alt="Philippine Eagle" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-3.jpg"
+              alt="Philippine Eagle"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Bird
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Philippine Eagle</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Philippine Eagle
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> National Bird
               </div>
@@ -67,12 +86,18 @@ const NationalSymbols: React.FC = () => {
           {/* Card 4 (Horizontal - spans below Card 3) */}
           <div className="md:col-start-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden md:row-start-2 md:col-span-1 group">
             <div className="flex flex-col md:flex-row">
-              <img src="/gallery-4.jpg" alt="Sampaguita" className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+              <img
+                src="/gallery-4.jpg"
+                alt="Sampaguita"
+                className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="p-6 flex-1">
                 <div className="absolute top-4 left-4 md:static md:mb-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
                   Flower
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Sampaguita</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Sampaguita
+                </h3>
                 <div className="flex items-center text-yellow-500 text-sm">
                   <span className="mr-1">⭐</span> National Flower
                 </div>

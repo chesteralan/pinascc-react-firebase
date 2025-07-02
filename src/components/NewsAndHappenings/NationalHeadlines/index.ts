@@ -1,1 +1,1 @@
-export { default } from './NationalHeadlines';
+export { default } from "./NationalHeadlines";

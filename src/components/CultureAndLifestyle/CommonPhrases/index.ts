@@ -1,1 +1,1 @@
-export { default } from './CommonPhrases';
+export { default } from "./CommonPhrases";

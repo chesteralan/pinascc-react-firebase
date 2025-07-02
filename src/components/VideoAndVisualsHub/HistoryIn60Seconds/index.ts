@@ -1,1 +1,1 @@
-export { default } from './HistoryIn60Seconds';
+export { default } from "./HistoryIn60Seconds";

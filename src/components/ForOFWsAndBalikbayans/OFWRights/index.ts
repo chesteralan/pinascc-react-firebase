@@ -1,1 +1,1 @@
-export { default } from './OFWRights';
+export { default } from "./OFWRights";

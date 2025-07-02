@@ -1,1 +1,1 @@
-export { default } from './TopDestinations';
+export { default } from "./TopDestinations";

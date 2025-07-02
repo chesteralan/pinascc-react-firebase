@@ -15,8 +15,9 @@ const RemoteJobBoards: React.FC = () => {
             </h2>
           </div>
           <p className="text-base text-gray-500 max-w-md text-right leading-relaxed">
-            Discover the best online platforms for remote and work-from-home opportunities tailored for Filipinos.
-            Find flexible jobs that fit your skills and lifestyle.
+            Discover the best online platforms for remote and work-from-home
+            opportunities tailored for Filipinos. Find flexible jobs that fit
+            your skills and lifestyle.
           </p>
         </div>
 
@@ -24,7 +25,11 @@ const RemoteJobBoards: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-1.jpg" alt="Upwork" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-1.jpg"
+              alt="Upwork"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Freelance
             </div>
@@ -38,12 +43,18 @@ const RemoteJobBoards: React.FC = () => {
 
           {/* Card 2 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-2.jpg" alt="OnlineJobs.ph" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-2.jpg"
+              alt="OnlineJobs.ph"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               Local
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">OnlineJobs.ph</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                OnlineJobs.ph
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Filipino-Focused
               </div>
@@ -52,12 +63,18 @@ const RemoteJobBoards: React.FC = () => {
 
           {/* Card 3 (Vertical) */}
           <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
-            <img src="/gallery-3.jpg" alt="VirtualStaff.ph" className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img
+              src="/gallery-3.jpg"
+              alt="VirtualStaff.ph"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
             <div className="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-md">
               VA
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">VirtualStaff.ph</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                VirtualStaff.ph
+              </h3>
               <div className="flex items-center text-yellow-500 text-sm">
                 <span className="mr-1">⭐</span> Virtual Assistant Jobs
               </div>
@@ -67,12 +84,18 @@ const RemoteJobBoards: React.FC = () => {
           {/* Card 4 (Horizontal - spans below Card 3) */}
           <div className="md:col-start-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden md:row-start-2 md:col-span-1 group">
             <div className="flex flex-col md:flex-row">
-              <img src="/gallery-4.jpg" alt="FlexJobs" className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+              <img
+                src="/gallery-4.jpg"
+                alt="FlexJobs"
+                className="w-full md:w-1/2 h-48 md:h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="p-6 flex-1">
                 <div className="absolute top-4 left-4 md:static md:mb-2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-md">
                   Remote
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">FlexJobs</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  FlexJobs
+                </h3>
                 <div className="flex items-center text-yellow-500 text-sm">
                   <span className="mr-1">⭐</span> Curated Remote Jobs
                 </div>

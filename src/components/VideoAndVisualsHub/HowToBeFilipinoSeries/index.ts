@@ -1,1 +1,1 @@
-export { default } from './HowToBeFilipinoSeries';
+export { default } from "./HowToBeFilipinoSeries";

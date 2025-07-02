@@ -1,1 +1,1 @@
-export { default } from './FilipinoTimeConverter';
+export { default } from "./FilipinoTimeConverter";

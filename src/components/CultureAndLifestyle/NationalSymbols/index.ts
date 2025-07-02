@@ -1,1 +1,1 @@
-export { default } from './NationalSymbols';
+export { default } from "./NationalSymbols";

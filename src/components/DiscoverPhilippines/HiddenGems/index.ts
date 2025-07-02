@@ -1,1 +1,1 @@
-export { default } from './HiddenGems';
+export { default } from "./HiddenGems";

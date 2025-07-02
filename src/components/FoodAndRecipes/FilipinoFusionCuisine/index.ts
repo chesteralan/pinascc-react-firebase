@@ -1,1 +1,1 @@
-export { default } from './FilipinoFusionCuisine';
+export { default } from "./FilipinoFusionCuisine";

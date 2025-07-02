@@ -1,1 +1,1 @@
-export { default } from './PinasNowTools';
+export { default } from "./PinasNowTools";

@@ -1,1 +1,1 @@
-export { default } from './MustTryStreetFoods';
+export { default } from "./MustTryStreetFoods";

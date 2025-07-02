@@ -1,1 +1,1 @@
-export { default } from './FreelancingDigitalNomadism';
+export { default } from "./FreelancingDigitalNomadism";
