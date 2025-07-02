@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import CultureAndLifestyle from "../components/CultureAndLifestyle";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 
@@ -10,7 +10,35 @@ const CultureAndLifestylePage: React.FC<{ darkMode: boolean }> = ({
   return (
     <>
       <Header darkMode={darkMode} />
-      <CultureAndLifestyle />
+      <div className="container mx-auto px-4 py-8 pt-32">
+        <h1 className="text-3xl font-bold text-center mb-8">Culture and Lifestyle</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link to="/culture-and-lifestyle/common-phrases" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-xl font-semibold">Common Phrases</h2>
+            <p className="text-gray-600">Learn essential Filipino phrases.</p>
+          </Link>
+          <Link to="/culture-and-lifestyle/festivals-by-month" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-xl font-semibold">Festivals by Month</h2>
+            <p className="text-gray-600">Discover vibrant Filipino festivals.</p>
+          </Link>
+          <Link to="/culture-and-lifestyle/filipino-fashion" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-xl font-semibold">Filipino Fashion</h2>
+            <p className="text-gray-600">Explore traditional and modern Filipino attire.</p>
+          </Link>
+          <Link to="/culture-and-lifestyle/filipino-traditions" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-xl font-semibold">Filipino Traditions</h2>
+            <p className="text-gray-600">Understand Filipino customs and traditions.</p>
+          </Link>
+          <Link to="/culture-and-lifestyle/filipino-values" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-xl font-semibold">Filipino Values</h2>
+            <p className="text-gray-600">Learn about core Filipino values and humor.</p>
+          </Link>
+          <Link to="/culture-and-lifestyle/national-symbols" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-xl font-semibold">National Symbols</h2>
+            <p className="text-gray-600">Discover the symbols of the Philippines.</p>
+          </Link>
+        </div>
+      </div>
       <Newsletter />
       <Footer />
     </>
