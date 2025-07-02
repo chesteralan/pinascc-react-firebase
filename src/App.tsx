@@ -60,6 +60,7 @@ import FilipinoMythCreaturesPage from "./pages/VideoAndVisualsHub/FilipinoMythCr
 import HistoryIn60SecondsPage from "./pages/VideoAndVisualsHub/HistoryIn60SecondsPage";
 import HowToBeFilipinoSeriesPage from "./pages/VideoAndVisualsHub/HowToBeFilipinoSeriesPage";
 import ProvinceClipsPage from "./pages/VideoAndVisualsHub/ProvinceClipsPage";
+import SocialAndCommunityPage from "./pages/SocialAndCommunityPage";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -114,6 +115,10 @@ const App: React.FC = () => {
         <Route
           path="/video-visuals-hub"
           element={<VideoAndVisualsHubPage darkMode={darkMode} />}
+        />
+        <Route
+          path="/social-and-community"
+          element={<SocialAndCommunityPage darkMode={darkMode} />}
         />
         <Route
           path="/culture-and-lifestyle/common-phrases"

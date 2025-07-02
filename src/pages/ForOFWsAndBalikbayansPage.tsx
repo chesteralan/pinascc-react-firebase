@@ -13,23 +13,28 @@ const ForOFWsAndBalikbayansPage: React.FC<{ darkMode: boolean }> = ({
       <div className="container mx-auto px-4 py-8 pt-32">
         <h1 className="text-3xl font-bold text-center mb-8">For OFWs and Balikbayans</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Link to="/for-ofws-and-balikbayans/money-remittance-tips" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <Link to="/for-ofws-and-balikbayans/money-remittance-tips" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group">
+            <img src="/offer-1.jpg" alt="Money Remittance Tips" className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300" />
             <h2 className="text-xl font-semibold">Money Remittance Tips</h2>
             <p className="text-gray-600">Tips for sending money home safely.</p>
           </Link>
-          <Link to="/for-ofws-and-balikbayans/ofw-rights" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <Link to="/for-ofws-and-balikbayans/ofw-rights" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group">
+            <img src="/offer-2.jpg" alt="OFW Rights" className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300" />
             <h2 className="text-xl font-semibold">OFW Rights</h2>
             <p className="text-gray-600">Understand your rights and protections as an OFW.</p>
           </Link>
-          <Link to="/for-ofws-and-balikbayans/pinas-feels" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <Link to="/for-ofws-and-balikbayans/pinas-feels" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group">
+            <img src="/offer-3.jpg" alt="Pinas Feels" className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300" />
             <h2 className="text-xl font-semibold">Pinas Feels</h2>
             <p className="text-gray-600">Content to help ease homesickness.</p>
           </Link>
-          <Link to="/for-ofws-and-balikbayans/support-networks-abroad" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <Link to="/for-ofws-and-balikbayans/support-networks-abroad" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group">
+            <img src="/post-1.jpg" alt="Support Networks Abroad" className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300" />
             <h2 className="text-xl font-semibold">Support Networks Abroad</h2>
             <p className="text-gray-600">Connect with Filipino communities worldwide.</p>
           </Link>
-          <Link to="/for-ofws-and-balikbayans/travel-requirements" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <Link to="/for-ofws-and-balikbayans/travel-requirements" className="block p-4 border rounded-lg shadow hover:shadow-lg transition-shadow duration-300 group">
+            <img src="/post-2.jpg" alt="Travel Requirements" className="w-full h-32 object-cover rounded-lg mb-4 group-hover:scale-105 transition-transform duration-300" />
             <h2 className="text-xl font-semibold">Travel Requirements</h2>
             <p className="text-gray-600">Latest travel requirements to and from the Philippines.</p>
           </Link>
