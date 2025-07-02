@@ -83,8 +83,48 @@ const FilipinoFusionCuisine: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 4 (Horizontal - spans below Card 3) */}
-          <div className="md:col-start-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden md:row-start-2 md:col-span-1 group">
+          {/* Card 5 (Vertical) */}
+          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+            <img
+              src="/gallery-5.jpg"
+              alt="Adobo Pizza"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-md">
+              Italian-Filipino
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Adobo Pizza
+              </h3>
+              <div className="flex items-center text-yellow-500 text-sm">
+                <span className="mr-1">⭐</span> Savory Fusion
+              </div>
+            </div>
+          </div>
+
+          {/* Card 6 (Vertical) */}
+          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+            <img
+              src="/gallery-6.jpg"
+              alt="Buko Pandan Panna Cotta"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute top-4 left-4 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-md">
+              Dessert
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">
+                Buko Pandan Panna Cotta
+              </h3>
+              <div className="flex items-center text-yellow-500 text-sm">
+                <span className="mr-1">⭐</span> Tropical Delight
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4 (Horizontal - spans all columns) */}
+          <div className="md:col-span-3 relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
             <div className="flex flex-col md:flex-row">
               <img
                 src="/gallery-4.jpg"
