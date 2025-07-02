@@ -25,24 +25,24 @@ const Footer: React.FC = () => {
             <h3 className="font-bold mb-4">QUICK LINKS</h3>
             <ul className="text-gray-400">
               <li className="mb-2">
-                <a href="#travel" className="hover:text-white">
+                <Link to="/discover-philippines" className="hover:text-white">
                   Travel
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#food" className="hover:text-white">
+                <Link to="/food-recipes" className="hover:text-white">
                   Food
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#culture" className="hover:text-white">
+                <Link to="/culture-lifestyle" className="hover:text-white">
                   Culture
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#jobs" className="hover:text-white">
+                <Link to="/jobs-economy" className="hover:text-white">
                   Jobs
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -62,9 +62,19 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-16 pt-8 border-t border-gray-700 text-center text-gray-500">
           <p>
-            <Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link> |
-            <Link to="/terms-and-conditions" className="hover:text-white"> Terms & Conditions</Link> |
-            <Link to="/faq" className="hover:text-white"> FAQ</Link>
+            <Link to="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>{" "}
+            |
+            <Link to="/terms-and-conditions" className="hover:text-white">
+              {" "}
+              Terms & Conditions
+            </Link>{" "}
+            |
+            <Link to="/faq" className="hover:text-white">
+              {" "}
+              FAQ
+            </Link>
           </p>
           <p>
             &copy; {new Date().getFullYear()} Pinas.cc. All rights reserved.
