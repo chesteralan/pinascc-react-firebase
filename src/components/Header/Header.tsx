@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${scrolled ? (darkMode ? "bg-gray-900 shadow-md" : "bg-white shadow-md") : "bg-transparent"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 bg-gray-900 shadow-md`}
     >
       {/* Top Bar */}
       <TopBar scrolled={scrolled} darkMode={darkMode} />
