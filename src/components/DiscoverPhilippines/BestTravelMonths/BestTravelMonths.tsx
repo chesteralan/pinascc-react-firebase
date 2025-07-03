@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BestTravelMonths: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const BestTravelMonths: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/best-travel-months/best-travel-months-luzon"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Luzon"
@@ -41,10 +45,13 @@ const BestTravelMonths: React.FC = () => {
                 <span className="mr-1">⭐</span> Dry Season
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/best-travel-months/best-travel-months-visayas"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Visayas"
@@ -61,10 +68,13 @@ const BestTravelMonths: React.FC = () => {
                 <span className="mr-1">⭐</span> Peak Season
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/best-travel-months/best-travel-months-mindanao"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Mindanao"
@@ -81,10 +91,13 @@ const BestTravelMonths: React.FC = () => {
                 <span className="mr-1">⭐</span> Less Rain
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/best-travel-months/best-travel-months-palawan"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Palawan"
@@ -101,10 +114,13 @@ const BestTravelMonths: React.FC = () => {
                 <span className="mr-1">⭐</span> Dry Season
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/best-travel-months/best-travel-months-baguio"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Baguio"
@@ -121,10 +137,13 @@ const BestTravelMonths: React.FC = () => {
                 <span className="mr-1">⭐</span> Summer Capital
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/best-travel-months/best-travel-months-overall"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Overall"
@@ -141,7 +160,7 @@ const BestTravelMonths: React.FC = () => {
                 <span className="mr-1">⭐</span> Cool & Dry
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -4,6 +4,16 @@ import HomePage from "./pages/HomePage";
 import LoadingSpinner from "./components/LoadingSpinner";
 import ProtectedRoute from "./components/ProtectedRoute";
 import MainLayout from "./components/MainLayout";
+import DetailPage from "./pages/DetailPage";
+import { cultureAndLifestyleData } from "./data/cultureAndLifestyleData";
+import { discoverPhilippinesData } from "./data/discoverPhilippinesData";
+import { govtServicesSimplifiedData } from "./data/govtServicesSimplifiedData";
+import { jobsAndEconomyData } from "./data/jobsAndEconomyData";
+import { newsAndHappeningsData } from "./data/newsAndHappeningsData";
+import { pinasNowToolsData } from "./data/pinasNowToolsData";
+import { socialAndCommunityData } from "./data/socialAndCommunityData";
+import { videoAndVisualsHubData } from "./data/videoAndVisualsHubData";
+import { foodAndRecipesData } from "./data/foodAndRecipesData";
 
 const Login = React.lazy(() => import("./pages/Auth/Login"));
 const Register = React.lazy(() => import("./pages/Auth/Register"));
@@ -289,6 +299,30 @@ const App: React.FC = () => {
       element: <NationalSymbolsPage />,
     },
     {
+      path: "/culture-and-lifestyle/common-phrases/:id",
+      element: <DetailPage data={cultureAndLifestyleData} />,
+    },
+    {
+      path: "/culture-and-lifestyle/festivals-by-month/:id",
+      element: <DetailPage data={cultureAndLifestyleData} />,
+    },
+    {
+      path: "/culture-and-lifestyle/filipino-fashion/:id",
+      element: <DetailPage data={cultureAndLifestyleData} />,
+    },
+    {
+      path: "/culture-and-lifestyle/filipino-traditions/:id",
+      element: <DetailPage data={cultureAndLifestyleData} />,
+    },
+    {
+      path: "/culture-and-lifestyle/filipino-values/:id",
+      element: <DetailPage data={cultureAndLifestyleData} />,
+    },
+    {
+      path: "/culture-and-lifestyle/national-symbols/:id",
+      element: <DetailPage data={cultureAndLifestyleData} />,
+    },
+    {
       path: "/discover-philippines/best-travel-months",
       element: <BestTravelMonthsPage />,
     },
@@ -310,6 +344,30 @@ const App: React.FC = () => {
     },
     { path: "/discover-philippines/visa-info", element: <VisaInfoPage /> },
     {
+      path: "/discover-philippines/best-travel-months/:id",
+      element: <DetailPage data={discoverPhilippinesData} />,
+    },
+    {
+      path: "/discover-philippines/hidden-gems/:id",
+      element: <DetailPage data={discoverPhilippinesData} />,
+    },
+    {
+      path: "/discover-philippines/interactive-map/:id",
+      element: <DetailPage data={discoverPhilippinesData} />,
+    },
+    {
+      path: "/discover-philippines/local-guides/:id",
+      element: <DetailPage data={discoverPhilippinesData} />,
+    },
+    {
+      path: "/discover-philippines/top-destinations/:id",
+      element: <DetailPage data={discoverPhilippinesData} />,
+    },
+    {
+      path: "/discover-philippines/visa-info/:id",
+      element: <DetailPage data={discoverPhilippinesData} />,
+    },
+    {
       path: "/food-and-recipes/filipino-fusion-cuisine",
       element: <FilipinoFusionCuisinePage />,
     },
@@ -328,6 +386,26 @@ const App: React.FC = () => {
     {
       path: "/food-and-recipes/weekly-featured-recipes",
       element: <WeeklyFeaturedRecipesPage />,
+    },
+    {
+      path: "/food-and-recipes/filipino-fusion-cuisine/:id",
+      element: <DetailPage data={foodAndRecipesData} />,
+    },
+    {
+      path: "/food-and-recipes/must-try-street-foods/:id",
+      element: <DetailPage data={foodAndRecipesData} />,
+    },
+    {
+      path: "/food-and-recipes/ofw-grocery-hacks/:id",
+      element: <DetailPage data={foodAndRecipesData} />,
+    },
+    {
+      path: "/food-and-recipes/top-regional-dishes/:id",
+      element: <DetailPage data={foodAndRecipesData} />,
+    },
+    {
+      path: "/food-and-recipes/weekly-featured-recipes/:id",
+      element: <DetailPage data={foodAndRecipesData} />,
     },
     {
       path: "/for-ofws-and-balikbayans/money-remittance-tips",
@@ -366,6 +444,22 @@ const App: React.FC = () => {
       element: <StepByStepGuidesPage />,
     },
     {
+      path: "/government-services/govt-help-sections/:id",
+      element: <DetailPage data={govtServicesSimplifiedData} />,
+    },
+    {
+      path: "/government-services/hotline-directory/:id",
+      element: <DetailPage data={govtServicesSimplifiedData} />,
+    },
+    {
+      path: "/government-services/passport-visa-guides/:id",
+      element: <DetailPage data={govtServicesSimplifiedData} />,
+    },
+    {
+      path: "/government-services/step-by-step-guides/:id",
+      element: <DetailPage data={govtServicesSimplifiedData} />,
+    },
+    {
       path: "/jobs-and-economy/freelancing-digital-nomadism",
       element: <FreelancingDigitalNomadismPage />,
     },
@@ -380,6 +474,22 @@ const App: React.FC = () => {
     {
       path: "/jobs-and-economy/skills-development",
       element: <SkillsDevelopmentPage />,
+    },
+    {
+      path: "/jobs-and-economy/freelancing-digital-nomadism/:id",
+      element: <DetailPage data={jobsAndEconomyData} />,
+    },
+    {
+      path: "/jobs-and-economy/job-hunting-tips/:id",
+      element: <DetailPage data={jobsAndEconomyData} />,
+    },
+    {
+      path: "/jobs-and-economy/remote-job-boards/:id",
+      element: <DetailPage data={jobsAndEconomyData} />,
+    },
+    {
+      path: "/jobs-and-economy/skills-development/:id",
+      element: <DetailPage data={jobsAndEconomyData} />,
     },
     { path: "/know-the-philippines", element: <KnowThePhilippinesPage /> },
     {
@@ -397,6 +507,22 @@ const App: React.FC = () => {
     {
       path: "/news-and-happenings/positive-stories",
       element: <PositiveStoriesPage />,
+    },
+    {
+      path: "/news-and-happenings/business-and-tech/:id",
+      element: <DetailPage data={newsAndHappeningsData} />,
+    },
+    {
+      path: "/news-and-happenings/local-gov-announcements/:id",
+      element: <DetailPage data={newsAndHappeningsData} />,
+    },
+    {
+      path: "/news-and-happenings/national-headlines/:id",
+      element: <DetailPage data={newsAndHappeningsData} />,
+    },
+    {
+      path: "/news-and-happenings/positive-stories/:id",
+      element: <DetailPage data={newsAndHappeningsData} />,
     },
     {
       path: "/pinas-now-tools/barangay-locator",
@@ -420,6 +546,30 @@ const App: React.FC = () => {
       element: <NationalHolidaysCalendarPage />,
     },
     {
+      path: "/pinas-now-tools/barangay-locator/:id",
+      element: <DetailPage data={pinasNowToolsData} />,
+    },
+    {
+      path: "/pinas-now-tools/currency-converter/:id",
+      element: <DetailPage data={pinasNowToolsData} />,
+    },
+    {
+      path: "/pinas-now-tools/filipino-time-converter/:id",
+      element: <DetailPage data={pinasNowToolsData} />,
+    },
+    {
+      path: "/pinas-now-tools/language-translator/:id",
+      element: <DetailPage data={pinasNowToolsData} />,
+    },
+    {
+      path: "/pinas-now-tools/live-weather/:id",
+      element: <DetailPage data={pinasNowToolsData} />,
+    },
+    {
+      path: "/pinas-now-tools/national-holidays-calendar/:id",
+      element: <DetailPage data={pinasNowToolsData} />,
+    },
+    {
       path: "/social-and-community/filipino-memes",
       element: <FilipinoMemesPage />,
     },
@@ -436,6 +586,22 @@ const App: React.FC = () => {
       element: <SocialFeedsPage />,
     },
     {
+      path: "/social-and-community/filipino-memes/:id",
+      element: <DetailPage data={socialAndCommunityData} />,
+    },
+    {
+      path: "/social-and-community/forums-and-qa/:id",
+      element: <DetailPage data={socialAndCommunityData} />,
+    },
+    {
+      path: "/social-and-community/kabayan-spotlight/:id",
+      element: <DetailPage data={socialAndCommunityData} />,
+    },
+    {
+      path: "/social-and-community/social-feeds/:id",
+      element: <DetailPage data={socialAndCommunityData} />,
+    },
+    {
       path: "/video-and-visuals-hub/filipino-myth-creatures",
       element: <FilipinoMythCreaturesPage />,
     },
@@ -448,8 +614,24 @@ const App: React.FC = () => {
       element: <HowToBeFilipinoSeriesPage />,
     },
     {
-      path: "/video-visuals-hub/province-clips",
+      path: "/video-and-visuals-hub/province-clips",
       element: <ProvinceClipsPage />,
+    },
+    {
+      path: "/video-and-visuals-hub/filipino-myth-creatures/:id",
+      element: <DetailPage data={videoAndVisualsHubData} />,
+    },
+    {
+      path: "/video-and-visuals-hub/history-in-60-seconds/:id",
+      element: <DetailPage data={videoAndVisualsHubData} />,
+    },
+    {
+      path: "/video-and-visuals-hub/how-to-be-filipino-series/:id",
+      element: <DetailPage data={videoAndVisualsHubData} />,
+    },
+    {
+      path: "/video-visuals-hub/province-clips/:id",
+      element: <DetailPage data={videoAndVisualsHubData} />,
     },
     {
       path: "/privacy-policy",

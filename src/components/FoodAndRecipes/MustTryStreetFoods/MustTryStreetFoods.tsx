@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MustTryStreetFoods: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const MustTryStreetFoods: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/must-try-street-foods/must-try-street-foods-kwek-kwek"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Kwek-Kwek"
@@ -41,10 +45,13 @@ const MustTryStreetFoods: React.FC = () => {
                 <span className="mr-1">⭐</span> Orange Battered Quail Eggs
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/must-try-street-foods/must-try-street-foods-isaw"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Isaw"
@@ -59,10 +66,13 @@ const MustTryStreetFoods: React.FC = () => {
                 <span className="mr-1">⭐</span> Grilled Pork Intestines
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/must-try-street-foods/must-try-street-foods-fishball"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Fishball"
@@ -77,10 +87,13 @@ const MustTryStreetFoods: React.FC = () => {
                 <span className="mr-1">⭐</span> Popular Street Snack
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/must-try-street-foods/must-try-street-foods-balut"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Balut"
@@ -95,10 +108,13 @@ const MustTryStreetFoods: React.FC = () => {
                 <span className="mr-1">⭐</span> Fertilized Duck Egg
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/must-try-street-foods/must-try-street-foods-proben"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Proben"
@@ -113,10 +129,13 @@ const MustTryStreetFoods: React.FC = () => {
                 <span className="mr-1">⭐</span> Fried Chicken Proventriculus
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/must-try-street-foods/must-try-street-foods-taho"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Taho"
@@ -131,7 +150,7 @@ const MustTryStreetFoods: React.FC = () => {
                 <span className="mr-1">⭐</span> Sweet Tofu with Sago
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

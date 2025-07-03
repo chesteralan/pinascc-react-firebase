@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FilipinoMemes: React.FC = () => {
   return (
@@ -23,7 +24,10 @@ const FilipinoMemes: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/filipino-memes/filipino-memes-doge"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Doge"
@@ -40,10 +44,13 @@ const FilipinoMemes: React.FC = () => {
                 <span className="mr-1">⭐</span> Much Wow, Very Funny
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/filipino-memes/filipino-memes-distracted-boyfriend"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Distracted Boyfriend"
@@ -60,10 +67,13 @@ const FilipinoMemes: React.FC = () => {
                 <span className="mr-1">⭐</span> Everyday Situations
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/filipino-memes/filipino-memes-salt-bae"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Salt Bae"
@@ -78,10 +88,13 @@ const FilipinoMemes: React.FC = () => {
                 <span className="mr-1">⭐</span> Culinary Flair
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/filipino-memes/filipino-memes-side-eye-chloe"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Side-eye Chloe"
@@ -98,10 +111,13 @@ const FilipinoMemes: React.FC = () => {
                 <span className="mr-1">⭐</span> Sarcastic Look
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/filipino-memes/filipino-memes-grumpy-cat"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Grumpy Cat"
@@ -118,10 +134,13 @@ const FilipinoMemes: React.FC = () => {
                 <span className="mr-1">⭐</span> Forever Unimpressed
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/filipino-memes/filipino-memes-success-kid"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Success Kid"
@@ -138,7 +157,7 @@ const FilipinoMemes: React.FC = () => {
                 <span className="mr-1">⭐</span> Achieving Goals
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

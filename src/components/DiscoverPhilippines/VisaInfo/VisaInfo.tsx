@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const VisaInfo: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const VisaInfo: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/visa-info/visa-info-visa-free"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Visa-Free Countries"
@@ -41,10 +45,13 @@ const VisaInfo: React.FC = () => {
                 <span className="mr-1">⭐</span> 150+ Countries
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/visa-info/visa-info-visa-application"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Visa Application Process"
@@ -61,10 +68,13 @@ const VisaInfo: React.FC = () => {
                 <span className="mr-1">⭐</span> Step-by-Step Guide
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/visa-info/visa-info-required-documents"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Required Documents"
@@ -81,10 +91,13 @@ const VisaInfo: React.FC = () => {
                 <span className="mr-1">⭐</span> Checklist for Travelers
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/visa-info/visa-info-balikbayan-program"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Balikbayan Program"
@@ -101,10 +114,13 @@ const VisaInfo: React.FC = () => {
                 <span className="mr-1">⭐</span> Privileges for Filipinos Abroad
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/visa-info/visa-info-travel-restrictions"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Travel Restrictions"
@@ -121,10 +137,13 @@ const VisaInfo: React.FC = () => {
                 <span className="mr-1">⭐</span> Latest Updates
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/discover-philippines/visa-info/visa-info-visa-extension"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Extension & Overstay"
@@ -141,7 +160,7 @@ const VisaInfo: React.FC = () => {
                 <span className="mr-1">⭐</span> Avoiding Penalties
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

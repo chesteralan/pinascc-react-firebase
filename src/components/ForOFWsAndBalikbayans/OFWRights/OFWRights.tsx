@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OFWRights: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const OFWRights: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/ofw-rights/ofw-rights-labor-laws-abroad"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Labor Laws"
@@ -41,10 +45,13 @@ const OFWRights: React.FC = () => {
                 <span className="mr-1">⭐</span> Know Your Rights
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/ofw-rights/ofw-rights-owwa-services"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="OWWA"
@@ -61,10 +68,13 @@ const OFWRights: React.FC = () => {
                 <span className="mr-1">⭐</span> Welfare & Assistance
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/ofw-rights/ofw-rights-legal-assistance"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Legal Aid"
@@ -81,10 +91,13 @@ const OFWRights: React.FC = () => {
                 <span className="mr-1">⭐</span> Where to Get Help
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/ofw-rights/ofw-rights-anti-trafficking-laws"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Anti-Trafficking"
@@ -101,10 +114,13 @@ const OFWRights: React.FC = () => {
                 <span className="mr-1">⭐</span> Protecting OFWs
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/ofw-rights/ofw-rights-contract-review"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Contract Review"
@@ -121,10 +137,13 @@ const OFWRights: React.FC = () => {
                 <span className="mr-1">⭐</span> Before Signing
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/ofw-rights/ofw-rights-repatriation-process"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Repatriation"
@@ -141,7 +160,7 @@ const OFWRights: React.FC = () => {
                 <span className="mr-1">⭐</span> Returning Home
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FreelancingDigitalNomadism: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const FreelancingDigitalNomadism: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/jobs-and-economy/freelancing-digital-nomadism/freelancing-digital-nomadism-top-freelance-platforms"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Freelance Platforms"
@@ -41,10 +45,13 @@ const FreelancingDigitalNomadism: React.FC = () => {
                 <span className="mr-1">⭐</span> Upwork, Fiverr, OnlineJobs.ph
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/jobs-and-economy/freelancing-digital-nomadism/freelancing-digital-nomadism-essential-va-skills"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="VA Skills"
@@ -61,10 +68,13 @@ const FreelancingDigitalNomadism: React.FC = () => {
                 <span className="mr-1">⭐</span> Communication, Organization
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/jobs-and-economy/freelancing-digital-nomadism/freelancing-digital-nomadism-digital-nomad-visas"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Digital Nomad Visas"
@@ -81,10 +91,13 @@ const FreelancingDigitalNomadism: React.FC = () => {
                 <span className="mr-1">⭐</span> Countries Offering
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/jobs-and-economy/freelancing-digital-nomadism/freelancing-digital-nomadism-essential-remote-work-tools"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Remote Work Tools"
@@ -101,10 +114,13 @@ const FreelancingDigitalNomadism: React.FC = () => {
                 <span className="mr-1">⭐</span> Collaboration & Productivity
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/jobs-and-economy/freelancing-digital-nomadism/freelancing-digital-nomadism-financial-planning-for-nomads"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Financial Planning"
@@ -121,10 +137,13 @@ const FreelancingDigitalNomadism: React.FC = () => {
                 <span className="mr-1">⭐</span> Taxes & Savings
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/jobs-and-economy/freelancing-digital-nomadism/freelancing-digital-nomadism-co-working-spaces"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Co-working Spaces"
@@ -141,7 +160,7 @@ const FreelancingDigitalNomadism: React.FC = () => {
                 <span className="mr-1">⭐</span> Productive Environments
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

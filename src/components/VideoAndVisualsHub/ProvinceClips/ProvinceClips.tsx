@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProvinceClips: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const ProvinceClips: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-visuals-hub/province-clips/province-clips-palawan"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Palawan"
@@ -41,10 +45,13 @@ const ProvinceClips: React.FC = () => {
                 <span className="mr-1">⭐</span> Pristine Beaches
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-visuals-hub/province-clips/province-clips-cebu"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Cebu"
@@ -61,10 +68,13 @@ const ProvinceClips: React.FC = () => {
                 <span className="mr-1">⭐</span> Historical & Modern
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-visuals-hub/province-clips/province-clips-baguio"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Baguio"
@@ -81,10 +91,13 @@ const ProvinceClips: React.FC = () => {
                 <span className="mr-1">⭐</span> Cool Climate & Pine Trees
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-visuals-hub/province-clips/province-clips-batanes"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Batanes"
@@ -101,10 +114,13 @@ const ProvinceClips: React.FC = () => {
                 <span className="mr-1">⭐</span> Rolling Hills & Stone Houses
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-visuals-hub/province-clips/province-clips-davao"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Davao"
@@ -121,10 +137,13 @@ const ProvinceClips: React.FC = () => {
                 <span className="mr-1">⭐</span> Durian & Mount Apo
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-visuals-hub/province-clips/province-clips-siargao"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Siargao"
@@ -141,7 +160,7 @@ const ProvinceClips: React.FC = () => {
                 <span className="mr-1">⭐</span> Cloud 9 & Beaches
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

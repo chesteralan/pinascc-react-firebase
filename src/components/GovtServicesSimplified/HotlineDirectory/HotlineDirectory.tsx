@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HotlineDirectory: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const HotlineDirectory: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/hotline-directory/hotline-directory-emergency"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Emergency"
@@ -41,10 +45,13 @@ const HotlineDirectory: React.FC = () => {
                 <span className="mr-1">⭐</span> Dial 911
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/hotline-directory/hotline-directory-mmda"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Traffic"
@@ -61,10 +68,13 @@ const HotlineDirectory: React.FC = () => {
                 <span className="mr-1">⭐</span> 136
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/hotline-directory/hotline-directory-dot-tourist"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Tourist"
@@ -81,10 +91,13 @@ const HotlineDirectory: React.FC = () => {
                 <span className="mr-1">⭐</span> 1-800-10-TOURISM
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/hotline-directory/hotline-directory-covid-19"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="COVID-19 Hotline"
@@ -101,10 +114,13 @@ const HotlineDirectory: React.FC = () => {
                 <span className="mr-1">⭐</span> DOH Call Center
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/hotline-directory/hotline-directory-dti-consumer"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Consumer Protection"
@@ -121,10 +137,13 @@ const HotlineDirectory: React.FC = () => {
                 <span className="mr-1">⭐</span> Price & Quality Concerns
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/hotline-directory/hotline-directory-ndrrmc"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Disaster"
@@ -141,7 +160,7 @@ const HotlineDirectory: React.FC = () => {
                 <span className="mr-1">⭐</span> 117
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

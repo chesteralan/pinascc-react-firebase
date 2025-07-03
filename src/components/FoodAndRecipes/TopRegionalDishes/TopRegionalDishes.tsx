@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopRegionalDishes: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const TopRegionalDishes: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/top-regional-dishes/top-regional-dishes-bicol-express"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Bicol Express"
@@ -41,10 +45,13 @@ const TopRegionalDishes: React.FC = () => {
                 <span className="mr-1">⭐</span> Spicy & Creamy
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/top-regional-dishes/top-regional-dishes-la-paz-batchoy"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="La Paz Batchoy"
@@ -61,10 +68,13 @@ const TopRegionalDishes: React.FC = () => {
                 <span className="mr-1">⭐</span> Noodle Soup Delight
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/top-regional-dishes/top-regional-dishes-sinuglaw"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Sinuglaw"
@@ -79,10 +89,13 @@ const TopRegionalDishes: React.FC = () => {
                 <span className="mr-1">⭐</span> Grilled Pork & Kinilaw
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/top-regional-dishes/top-regional-dishes-kinilaw"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Kinilaw"
@@ -97,10 +110,13 @@ const TopRegionalDishes: React.FC = () => {
                 <span className="mr-1">⭐</span> Filipino Ceviche
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/top-regional-dishes/top-regional-dishes-pinakbet"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Pinakbet"
@@ -115,10 +131,13 @@ const TopRegionalDishes: React.FC = () => {
                 <span className="mr-1">⭐</span> Mixed Vegetables with Bagoong
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/top-regional-dishes/top-regional-dishes-pancit-malabon"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Pancit Malabon"
@@ -135,7 +154,7 @@ const TopRegionalDishes: React.FC = () => {
                 <span className="mr-1">⭐</span> Seafood Noodle Dish
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

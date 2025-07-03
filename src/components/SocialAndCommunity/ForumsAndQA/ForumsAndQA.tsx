@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ForumsAndQA: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const ForumsAndQA: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/forums-and-qa/forums-and-qa-travel-discussions"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Travel Forum"
@@ -41,10 +45,13 @@ const ForumsAndQA: React.FC = () => {
                 <span className="mr-1">⭐</span> Tips & Recommendations
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/forums-and-qa/forums-and-qa-filipino-cuisine-qa"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Food Forum"
@@ -61,10 +68,13 @@ const ForumsAndQA: React.FC = () => {
                 <span className="mr-1">⭐</span> Recipes & Techniques
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/forums-and-qa/forums-and-qa-culture-traditions"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Culture Forum"
@@ -81,10 +91,13 @@ const ForumsAndQA: React.FC = () => {
                 <span className="mr-1">⭐</span> Heritage & Customs
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/forums-and-qa/forums-and-qa-education-learning"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Education Forum"
@@ -101,10 +114,13 @@ const ForumsAndQA: React.FC = () => {
                 <span className="mr-1">⭐</span> Study Tips & Resources
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/forums-and-qa/forums-and-qa-technology-gadgets"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Technology Forum"
@@ -121,10 +137,13 @@ const ForumsAndQA: React.FC = () => {
                 <span className="mr-1">⭐</span> Latest Innovations
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/forums-and-qa/forums-and-qa-ofw-support-forum"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="OFW Forum"
@@ -141,7 +160,7 @@ const ForumsAndQA: React.FC = () => {
                 <span className="mr-1">⭐</span> Advice & Community
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

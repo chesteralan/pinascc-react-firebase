@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OFWGroceryHacks: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const OFWGroceryHacks: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/ofw-grocery-hacks/ofw-grocery-hacks-asian-markets"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Asian Markets"
@@ -41,10 +45,13 @@ const OFWGroceryHacks: React.FC = () => {
                 <span className="mr-1">⭐</span> Your Go-To Source
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/ofw-grocery-hacks/ofw-grocery-hacks-online-filipino-stores"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Online Stores"
@@ -61,10 +68,13 @@ const OFWGroceryHacks: React.FC = () => {
                 <span className="mr-1">⭐</span> Delivered to Your Door
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/ofw-grocery-hacks/ofw-grocery-hacks-diy-ingredients"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="DIY Ingredients"
@@ -81,10 +91,13 @@ const OFWGroceryHacks: React.FC = () => {
                 <span className="mr-1">⭐</span> Substitute & Create
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/ofw-grocery-hacks/ofw-grocery-hacks-filipino-food-blogs"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Filipino Food Blogs"
@@ -101,10 +114,13 @@ const OFWGroceryHacks: React.FC = () => {
                 <span className="mr-1">⭐</span> Authentic Recipes
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/ofw-grocery-hacks/ofw-grocery-hacks-community-gardens"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Community Gardens"
@@ -121,10 +137,13 @@ const OFWGroceryHacks: React.FC = () => {
                 <span className="mr-1">⭐</span> Fresh Produce
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/ofw-grocery-hacks/ofw-grocery-hacks-budgeting-sales"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Budgeting"
@@ -141,7 +160,7 @@ const OFWGroceryHacks: React.FC = () => {
                 <span className="mr-1">⭐</span> Smart Saving Tips
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
