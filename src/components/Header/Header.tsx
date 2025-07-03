@@ -120,6 +120,12 @@ const Header: React.FC<HeaderProps> = ({ darkMode }) => {
               >
                 SOCIAL & COMMUNITY
               </Link>
+              <Link
+                to="/my-account"
+                className={`block px-4 py-2 text-sm ${darkMode ? "text-gray-400 hover:text-white" : "text-gray-600 hover:text-gray-500"}`}
+              >
+                MY ACCOUNT
+              </Link>
             </div>
           </div>
         </nav>

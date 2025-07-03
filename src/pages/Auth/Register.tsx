@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
+import { doc, setDoc } from "firebase/firestore";
+import { auth, db } from "../../firebase";
 
 const Register: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -20,7 +21,17 @@ const Register: React.FC = () => {
     }
 
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password,
+      );
+      // Store additional user data in Firestore
+      await setDoc(doc(db, "users", userCredential.user.uid), {
+        email: userCredential.user.email,
+        name: "", // Initial empty name, user can update later
+        bio: "", // Initial empty bio
+      });
       navigate("/"); // Redirect to home page on successful registration
     } catch (err: unknown) {
       if (err instanceof Error) {

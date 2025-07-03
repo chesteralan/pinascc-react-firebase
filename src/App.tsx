@@ -4,9 +4,11 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LoadingSpinner from "./components/LoadingSpinner";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const Login = React.lazy(() => import("./pages/Auth/Login"));
 const Register = React.lazy(() => import("./pages/Auth/Register"));
+const MyAccountPage = React.lazy(() => import("./pages/MyAccountPage"));
 
 const DiscoverPhilippinesPage = React.lazy(
   () => import("./pages/DiscoverPhilippinesPage"),
@@ -214,6 +216,16 @@ const App: React.FC = () => {
             <Suspense fallback={<LoadingSpinner />}>
               <Register />
             </Suspense>
+          }
+        />
+        <Route
+          path="/my-account"
+          element={
+            <ProtectedRoute>
+              <Suspense fallback={<LoadingSpinner />}>
+                <MyAccountPage />
+              </Suspense>
+            </ProtectedRoute>
           }
         />
         <Route
