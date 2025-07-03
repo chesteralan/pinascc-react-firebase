@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebase";
 import Hero from "../components/Hero";
 import QuickAccessTiles from "../components/QuickAccessTiles";
 import KnowThePhilippines from "../components/KnowThePhilippines";
@@ -8,11 +9,12 @@ import TopDestinations from "../components/DiscoverPhilippines/TopDestinations";
 import Newsletter from "../components/Newsletter";
 import { Link } from "react-router-dom";
 
-const HomePage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
+const HomePage: React.FC = () => {
+  const [user] = useAuthState(auth);
+
   return (
-    <>
-      <Header darkMode={darkMode} />
-      <Hero />
+    <div className={user ? "pt-20" : ""}>
+      {!user && <Hero />}
       <QuickAccessTiles />
       <KnowThePhilippines />
       <TodayInPinas />
@@ -26,7 +28,7 @@ const HomePage: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
         </Link>
       </div>
       <Newsletter />
-    </>
+    </div>
   );
 };
 

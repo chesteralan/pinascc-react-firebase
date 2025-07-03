@@ -1,9 +1,13 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import LoadingSpinner from "./components/LoadingSpinner";
+import ProtectedRoute from "./components/ProtectedRoute";
+import MainLayout from "./components/MainLayout";
+
+const Login = React.lazy(() => import("./pages/Auth/Login"));
+const Register = React.lazy(() => import("./pages/Auth/Register"));
+const MyAccountPage = React.lazy(() => import("./pages/MyAccountPage"));
 
 const DiscoverPhilippinesPage = React.lazy(
   () => import("./pages/DiscoverPhilippinesPage"),
@@ -192,517 +196,288 @@ const ContactUsPage = React.lazy(() => import("./pages/ContactUsPage"));
 const App: React.FC = () => {
   const darkMode = true;
 
+  const routes = [
+    { path: "/", element: <HomePage /> },
+    {
+      path: "/login",
+      element: (
+        <Suspense fallback={<LoadingSpinner />}>
+          <Login />
+        </Suspense>
+      ),
+    },
+    {
+      path: "/register",
+      element: (
+        <Suspense fallback={<LoadingSpinner />}>
+          <Register />
+        </Suspense>
+      ),
+    },
+    {
+      path: "/my-account",
+      element: (
+        <ProtectedRoute>
+          <Suspense fallback={<LoadingSpinner />}>
+            <MyAccountPage />
+          </Suspense>
+        </ProtectedRoute>
+      ),
+    },
+    {
+      path: "/discover-philippines",
+      element: <DiscoverPhilippinesPage darkMode={darkMode} />,
+    },
+    {
+      path: "/culture-lifestyle",
+      element: <CultureAndLifestylePage darkMode={darkMode} />,
+    },
+    {
+      path: "/food-recipes",
+      element: <FoodAndRecipesPage darkMode={darkMode} />,
+    },
+    {
+      path: "/news-happenings",
+      element: <NewsAndHappeningsPage darkMode={darkMode} />,
+    },
+    {
+      path: "/jobs-economy",
+      element: <JobsAndEconomyPage darkMode={darkMode} />,
+    },
+    {
+      path: "/government-services",
+      element: <GovtServicesSimplifiedPage darkMode={darkMode} />,
+    },
+    {
+      path: "/ofws-balikbayans",
+      element: <ForOFWsAndBalikbayansPage darkMode={darkMode} />,
+    },
+    {
+      path: "/pinas-now-tools",
+      element: <PinasNowToolsPage darkMode={darkMode} />,
+    },
+    {
+      path: "/video-visuals-hub",
+      element: <VideoAndVisualsHubPage darkMode={darkMode} />,
+    },
+    {
+      path: "/social-and-community",
+      element: <SocialAndCommunityPage darkMode={darkMode} />,
+    },
+    {
+      path: "/culture-and-lifestyle/common-phrases",
+      element: <CommonPhrasesPage />,
+    },
+    {
+      path: "/culture-and-lifestyle/festivals-by-month",
+      element: <FestivalsByMonthPage />,
+    },
+    {
+      path: "/culture-and-lifestyle/filipino-fashion",
+      element: <FilipinoFashionPage />,
+    },
+    {
+      path: "/culture-and-lifestyle/filipino-traditions",
+      element: <FilipinoTraditionsPage />,
+    },
+    {
+      path: "/culture-and-lifestyle/filipino-values",
+      element: <FilipinoValuesPage />,
+    },
+    {
+      path: "/culture-and-lifestyle/national-symbols",
+      element: <NationalSymbolsPage />,
+    },
+    {
+      path: "/discover-philippines/best-travel-months",
+      element: <BestTravelMonthsPage />,
+    },
+    {
+      path: "/discover-philippines/hidden-gems",
+      element: <HiddenGemsPage />,
+    },
+    {
+      path: "/discover-philippines/interactive-map",
+      element: <InteractiveMapPage />,
+    },
+    {
+      path: "/discover-philippines/local-guides",
+      element: <LocalGuidesPage />,
+    },
+    {
+      path: "/discover-philippines/top-destinations",
+      element: <TopDestinationsPage />,
+    },
+    { path: "/discover-philippines/visa-info", element: <VisaInfoPage /> },
+    {
+      path: "/food-and-recipes/filipino-fusion-cuisine",
+      element: <FilipinoFusionCuisinePage />,
+    },
+    {
+      path: "/food-and-recipes/must-try-street-foods",
+      element: <MustTryStreetFoodsPage />,
+    },
+    {
+      path: "/food-and-recipes/ofw-grocery-hacks",
+      element: <OFWGroceryHacksPage />,
+    },
+    {
+      path: "/food-and-recipes/top-regional-dishes",
+      element: <TopRegionalDishesPage />,
+    },
+    {
+      path: "/food-and-recipes/weekly-featured-recipes",
+      element: <WeeklyFeaturedRecipesPage />,
+    },
+    {
+      path: "/for-ofws-and-balikbayans/money-remittance-tips",
+      element: <MoneyRemittanceTipsPage />,
+    },
+    {
+      path: "/for-ofws-and-balikbayans/ofw-rights",
+      element: <OFWRightsPage />,
+    },
+    {
+      path: "/for-ofws-and-balikbayans/pinas-feels",
+      element: <PinasFeelsPage />,
+    },
+    {
+      path: "/for-ofws-and-balikbayans/support-networks-abroad",
+      element: <SupportNetworksAbroadPage />,
+    },
+    {
+      path: "/for-ofws-and-balikbayans/travel-requirements",
+      element: <TravelRequirementsPage />,
+    },
+    {
+      path: "/government-services/govt-help-sections",
+      element: <GovtHelpSectionsPage />,
+    },
+    {
+      path: "/government-services/hotline-directory",
+      element: <HotlineDirectoryPage />,
+    },
+    {
+      path: "/government-services/passport-visa-guides",
+      element: <PassportVisaGuidesPage />,
+    },
+    {
+      path: "/government-services/step-by-step-guides",
+      element: <StepByStepGuidesPage />,
+    },
+    {
+      path: "/jobs-and-economy/freelancing-digital-nomadism",
+      element: <FreelancingDigitalNomadismPage />,
+    },
+    {
+      path: "/jobs-and-economy/job-hunting-tips",
+      element: <JobHuntingTipsPage />,
+    },
+    {
+      path: "/jobs-and-economy/remote-job-boards",
+      element: <RemoteJobBoardsPage />,
+    },
+    {
+      path: "/jobs-and-economy/skills-development",
+      element: <SkillsDevelopmentPage />,
+    },
+    { path: "/know-the-philippines", element: <KnowThePhilippinesPage /> },
+    {
+      path: "/news-and-happenings/business-and-tech",
+      element: <BusinessAndTechPage />,
+    },
+    {
+      path: "/news-and-happenings/local-gov-announcements",
+      element: <LocalGovAnnouncementsPage />,
+    },
+    {
+      path: "/news-and-happenings/national-headlines",
+      element: <NationalHeadlinesPage />,
+    },
+    {
+      path: "/news-and-happenings/positive-stories",
+      element: <PositiveStoriesPage />,
+    },
+    {
+      path: "/pinas-now-tools/barangay-locator",
+      element: <BarangayLocatorPage />,
+    },
+    {
+      path: "/pinas-now-tools/currency-converter",
+      element: <CurrencyConverterPage />,
+    },
+    {
+      path: "/pinas-now-tools/filipino-time-converter",
+      element: <FilipinoTimeConverterPage />,
+    },
+    {
+      path: "/pinas-now-tools/language-translator",
+      element: <LanguageTranslatorPage />,
+    },
+    { path: "/pinas-now-tools/live-weather", element: <LiveWeatherPage /> },
+    {
+      path: "/pinas-now-tools/national-holidays-calendar",
+      element: <NationalHolidaysCalendarPage />,
+    },
+    {
+      path: "/social-and-community/filipino-memes",
+      element: <FilipinoMemesPage />,
+    },
+    {
+      path: "/social-and-community/forums-and-qa",
+      element: <ForumsAndQAPage />,
+    },
+    {
+      path: "/social-and-community/kabayan-spotlight",
+      element: <KabayanSpotlightPage />,
+    },
+    {
+      path: "/social-and-community/social-feeds",
+      element: <SocialFeedsPage />,
+    },
+    {
+      path: "/video-and-visuals-hub/filipino-myth-creatures",
+      element: <FilipinoMythCreaturesPage />,
+    },
+    {
+      path: "/video-and-visuals-hub/history-in-60-seconds",
+      element: <HistoryIn60SecondsPage />,
+    },
+    {
+      path: "/video-and-visuals-hub/how-to-be-filipino-series",
+      element: <HowToBeFilipinoSeriesPage />,
+    },
+    {
+      path: "/video-visuals-hub/province-clips",
+      element: <ProvinceClipsPage />,
+    },
+    {
+      path: "/privacy-policy",
+      element: <PrivacyPolicyPage darkMode={darkMode} />,
+    },
+    {
+      path: "/terms-and-conditions",
+      element: <TermsAndConditionsPage darkMode={darkMode} />,
+    },
+    { path: "/faq", element: <FAQPage darkMode={darkMode} /> },
+    { path: "/contact-us", element: <ContactUsPage darkMode={darkMode} /> },
+  ];
+
   return (
     <Router>
-      <Header darkMode={darkMode} /> {/* Pass darkMode prop to Header */}
-      <Routes>
-        <Route path="/" element={<HomePage darkMode={darkMode} />} />
-        <Route
-          path="/discover-philippines"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <DiscoverPhilippinesPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-lifestyle"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <CultureAndLifestylePage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/food-recipes"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FoodAndRecipesPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/news-happenings"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <NewsAndHappeningsPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/jobs-economy"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <JobsAndEconomyPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/government-services"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <GovtServicesSimplifiedPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/ofws-balikbayans"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ForOFWsAndBalikbayansPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <PinasNowToolsPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/video-visuals-hub"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <VideoAndVisualsHubPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/social-and-community"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <SocialAndCommunityPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-and-lifestyle/common-phrases"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <CommonPhrasesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-and-lifestyle/festivals-by-month"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FestivalsByMonthPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-and-lifestyle/filipino-fashion"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoFashionPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-and-lifestyle/filipino-traditions"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoTraditionsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-and-lifestyle/filipino-values"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoValuesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/culture-and-lifestyle/national-symbols"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <NationalSymbolsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/discover-philippines/best-travel-months"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <BestTravelMonthsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/discover-philippines/hidden-gems"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <HiddenGemsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/discover-philippines/interactive-map"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <InteractiveMapPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/discover-philippines/local-guides"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LocalGuidesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/discover-philippines/top-destinations"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <TopDestinationsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/discover-philippines/visa-info"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <VisaInfoPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/food-and-recipes/filipino-fusion-cuisine"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoFusionCuisinePage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/food-and-recipes/must-try-street-foods"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <MustTryStreetFoodsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/food-and-recipes/ofw-grocery-hacks"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <OFWGroceryHacksPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/food-and-recipes/top-regional-dishes"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <TopRegionalDishesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/food-and-recipes/weekly-featured-recipes"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <WeeklyFeaturedRecipesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/for-ofws-and-balikbayans/money-remittance-tips"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <MoneyRemittanceTipsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/for-ofws-and-balikbayans/ofw-rights"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <OFWRightsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/for-ofws-and-balikbayans/pinas-feels"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <PinasFeelsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/for-ofws-and-balikbayans/support-networks-abroad"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <SupportNetworksAbroadPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/for-ofws-and-balikbayans/travel-requirements"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <TravelRequirementsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/government-services/govt-help-sections"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <GovtHelpSectionsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/government-services/hotline-directory"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <HotlineDirectoryPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/government-services/passport-visa-guides"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <PassportVisaGuidesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/government-services/step-by-step-guides"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <StepByStepGuidesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/jobs-and-economy/freelancing-digital-nomadism"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FreelancingDigitalNomadismPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/jobs-and-economy/job-hunting-tips"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <JobHuntingTipsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/jobs-and-economy/remote-job-boards"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <RemoteJobBoardsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/jobs-and-economy/skills-development"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <SkillsDevelopmentPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/know-the-philippines"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <KnowThePhilippinesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/news-and-happenings/business-and-tech"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <BusinessAndTechPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/news-and-happenings/local-gov-announcements"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LocalGovAnnouncementsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/news-and-happenings/national-headlines"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <NationalHeadlinesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/news-and-happenings/positive-stories"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <PositiveStoriesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools/barangay-locator"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <BarangayLocatorPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools/currency-converter"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <CurrencyConverterPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools/filipino-time-converter"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoTimeConverterPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools/language-translator"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LanguageTranslatorPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools/live-weather"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LiveWeatherPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/pinas-now-tools/national-holidays-calendar"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <NationalHolidaysCalendarPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/social-and-community/filipino-memes"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoMemesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/social-and-community/forums-and-qa"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ForumsAndQAPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/social-and-community/kabayan-spotlight"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <KabayanSpotlightPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/social-and-community/social-feeds"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <SocialFeedsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/video-and-visuals-hub/filipino-myth-creatures"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FilipinoMythCreaturesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/video-and-visuals-hub/history-in-60-seconds"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <HistoryIn60SecondsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/video-and-visuals-hub/how-to-be-filipino-series"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <HowToBeFilipinoSeriesPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/video-visuals-hub/province-clips"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ProvinceClipsPage />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/privacy-policy"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <PrivacyPolicyPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/terms-and-conditions"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <TermsAndConditionsPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/faq"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <FAQPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/contact-us"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ContactUsPage darkMode={darkMode} />
-            </Suspense>
-          }
-        />
-      </Routes>
-      <Footer />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          {routes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              element={
+                <MainLayout darkMode={darkMode}>{route.element}</MainLayout>
+              }
+            />
+          ))}
+        </Routes>
+      </Suspense>
     </Router>
   );
 };
