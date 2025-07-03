@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LoadingSpinner from "./components/LoadingSpinner";
 
+const Login = React.lazy(() => import("./pages/Auth/Login"));
+const Register = React.lazy(() => import("./pages/Auth/Register"));
+
 const DiscoverPhilippinesPage = React.lazy(
   () => import("./pages/DiscoverPhilippinesPage"),
 );
@@ -197,6 +200,22 @@ const App: React.FC = () => {
       <Header darkMode={darkMode} /> {/* Pass darkMode prop to Header */}
       <Routes>
         <Route path="/" element={<HomePage darkMode={darkMode} />} />
+        <Route
+          path="/login"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Login />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Register />
+            </Suspense>
+          }
+        />
         <Route
           path="/discover-philippines"
           element={
