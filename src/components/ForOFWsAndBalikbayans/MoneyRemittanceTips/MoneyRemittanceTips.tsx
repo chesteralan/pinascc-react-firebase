@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MoneyRemittanceTips: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const MoneyRemittanceTips: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/money-remittance-tips/money-remittance-tips-bank-transfers"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Bank Transfers"
@@ -41,10 +45,13 @@ const MoneyRemittanceTips: React.FC = () => {
                 <span className="mr-1">⭐</span> Secure & Reliable
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/money-remittance-tips/money-remittance-tips-online-remittance"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Online Services"
@@ -61,10 +68,13 @@ const MoneyRemittanceTips: React.FC = () => {
                 <span className="mr-1">⭐</span> Fast & Convenient
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/money-remittance-tips/money-transfer-agents"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Money Transfer Agents"
@@ -81,10 +91,13 @@ const MoneyRemittanceTips: React.FC = () => {
                 <span className="mr-1">⭐</span> Wide Network
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/money-remittance-tips/understanding-fees"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Remittance Fees"
@@ -101,10 +114,13 @@ const MoneyRemittanceTips: React.FC = () => {
                 <span className="mr-1">⭐</span> Hidden Charges
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/money-remittance-tips/security-tips"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Security Tips"
@@ -121,10 +137,13 @@ const MoneyRemittanceTips: React.FC = () => {
                 <span className="mr-1">⭐</span> Protect Your Money
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/for-ofws-and-balikbayans/money-remittance-tips/exchange-rates"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Exchange Rates"
@@ -141,7 +160,7 @@ const MoneyRemittanceTips: React.FC = () => {
                 <span className="mr-1">⭐</span> Get the Best Value
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

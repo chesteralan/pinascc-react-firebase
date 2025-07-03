@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HowToBeFilipinoSeries: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const HowToBeFilipinoSeries: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/how-to-be-filipino-series/how-to-be-filipino-hospitality"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Filipino Hospitality"
@@ -41,10 +45,13 @@ const HowToBeFilipinoSeries: React.FC = () => {
                 <span className="mr-1">⭐</span> Welcoming Guests
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/how-to-be-filipino-series/how-to-be-filipino-humor"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Filipino Humor"
@@ -61,10 +68,13 @@ const HowToBeFilipinoSeries: React.FC = () => {
                 <span className="mr-1">⭐</span> Laughter is the Best Medicine
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/how-to-be-filipino-series/how-to-be-filipino-family-importance"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Family Values"
@@ -81,10 +91,13 @@ const HowToBeFilipinoSeries: React.FC = () => {
                 <span className="mr-1">⭐</span> Strong Family Ties
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/how-to-be-filipino-series/how-to-be-filipino-superstitions"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Filipino Superstitions"
@@ -101,10 +114,13 @@ const HowToBeFilipinoSeries: React.FC = () => {
                 <span className="mr-1">⭐</span> Old Wives' Tales
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/how-to-be-filipino-series/how-to-be-filipino-celebrations"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Filipino Celebrations"
@@ -121,10 +137,13 @@ const HowToBeFilipinoSeries: React.FC = () => {
                 <span className="mr-1">⭐</span> Fiestas & Holidays
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/how-to-be-filipino-series/how-to-be-filipino-food-etiquette"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Food Culture"
@@ -141,7 +160,7 @@ const HowToBeFilipinoSeries: React.FC = () => {
                 <span className="mr-1">⭐</span> Dining Customs
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GovtHelpSections: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const GovtHelpSections: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/govt-help-sections/govt-help-sections-nbi-clearance"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="NBI Clearance"
@@ -41,10 +45,13 @@ const GovtHelpSections: React.FC = () => {
                 <span className="mr-1">⭐</span> Application Guide
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/govt-help-sections/govt-help-sections-philhealth-benefits"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="PhilHealth"
@@ -61,10 +68,13 @@ const GovtHelpSections: React.FC = () => {
                 <span className="mr-1">⭐</span> Membership & Claims
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/govt-help-sections/govt-help-sections-sss-contributions"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="SSS"
@@ -81,10 +91,13 @@ const GovtHelpSections: React.FC = () => {
                 <span className="mr-1">⭐</span> Loans & Pensions
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/govt-help-sections/govt-help-sections-bir-tax-filing"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="BIR"
@@ -101,10 +114,13 @@ const GovtHelpSections: React.FC = () => {
                 <span className="mr-1">⭐</span> Income Tax Guide
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/govt-help-sections/govt-help-sections-dfa-passport-services"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="DFA"
@@ -121,10 +137,13 @@ const GovtHelpSections: React.FC = () => {
                 <span className="mr-1">⭐</span> Application & Renewal
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/government-services/govt-help-sections/govt-help-sections-pag-ibig-fund"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="PAG-IBIG"
@@ -141,7 +160,7 @@ const GovtHelpSections: React.FC = () => {
                 <span className="mr-1">⭐</span> Housing & Savings
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

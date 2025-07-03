@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NationalSymbols: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const NationalSymbols: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/national-symbols/national-symbols-flag"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Philippine Flag"
@@ -41,10 +45,13 @@ const NationalSymbols: React.FC = () => {
                 <span className="mr-1">⭐</span> Symbol of Sovereignty
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/national-symbols/national-symbols-anthem"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Lupang Hinirang"
@@ -61,10 +68,13 @@ const NationalSymbols: React.FC = () => {
                 <span className="mr-1">⭐</span> National Anthem
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/national-symbols/national-symbols-eagle"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Philippine Eagle"
@@ -81,10 +91,13 @@ const NationalSymbols: React.FC = () => {
                 <span className="mr-1">⭐</span> National Bird
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/national-symbols/national-symbols-narra-tree"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Narra Tree"
@@ -101,10 +114,13 @@ const NationalSymbols: React.FC = () => {
                 <span className="mr-1">⭐</span> National Tree
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/national-symbols/national-symbols-carabao"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Carabao"
@@ -119,10 +135,13 @@ const NationalSymbols: React.FC = () => {
                 <span className="mr-1">⭐</span> National Animal
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/national-symbols/national-symbols-sampaguita"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Sampaguita"
@@ -139,7 +158,7 @@ const NationalSymbols: React.FC = () => {
                 <span className="mr-1">⭐</span> National Flower
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

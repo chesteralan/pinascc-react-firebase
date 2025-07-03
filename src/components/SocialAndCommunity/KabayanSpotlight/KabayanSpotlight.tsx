@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const KabayanSpotlight: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const KabayanSpotlight: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/kabayan-spotlight/kabayan-spotlight-dr-maria-santos"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Filipino Doctor"
@@ -41,10 +45,13 @@ const KabayanSpotlight: React.FC = () => {
                 <span className="mr-1">⭐</span> Frontline Hero
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/kabayan-spotlight/kabayan-spotlight-juan-dela-cruz"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Filipino Artist"
@@ -61,10 +68,13 @@ const KabayanSpotlight: React.FC = () => {
                 <span className="mr-1">⭐</span> International Artist
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/kabayan-spotlight/kabayan-spotlight-hidilyn-diaz"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Filipino Athlete"
@@ -81,10 +91,13 @@ const KabayanSpotlight: React.FC = () => {
                 <span className="mr-1">⭐</span> Olympic Gold Medalist
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/kabayan-spotlight/kabayan-spotlight-dr-reinabelle-reyes"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Filipino Scientist"
@@ -101,10 +114,13 @@ const KabayanSpotlight: React.FC = () => {
                 <span className="mr-1">⭐</span> Astrophysicist
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/kabayan-spotlight/kabayan-spotlight-chef-margarita-fores"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Filipino Chef"
@@ -121,10 +137,13 @@ const KabayanSpotlight: React.FC = () => {
                 <span className="mr-1">⭐</span> Asia's Best Female Chef
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/social-and-community/kabayan-spotlight/kabayan-spotlight-tony-tan-caktiong"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Filipino Entrepreneur"
@@ -141,7 +160,7 @@ const KabayanSpotlight: React.FC = () => {
                 <span className="mr-1">⭐</span> Jollibee Founder
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

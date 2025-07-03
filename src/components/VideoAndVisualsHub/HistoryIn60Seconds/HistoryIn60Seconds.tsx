@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HistoryIn60Seconds: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const HistoryIn60Seconds: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/history-in-60-seconds/history-in-60-seconds-arrival-of-magellan"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Magellan"
@@ -41,10 +45,13 @@ const HistoryIn60Seconds: React.FC = () => {
                 <span className="mr-1">⭐</span> 1521
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/history-in-60-seconds/history-in-60-seconds-jose-rizal-execution"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Rizal"
@@ -61,10 +68,13 @@ const HistoryIn60Seconds: React.FC = () => {
                 <span className="mr-1">⭐</span> 1896
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/history-in-60-seconds/history-in-60-seconds-edsa-people-power"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="EDSA"
@@ -81,10 +91,13 @@ const HistoryIn60Seconds: React.FC = () => {
                 <span className="mr-1">⭐</span> 1986
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/history-in-60-seconds/history-in-60-seconds-battle-of-mactan"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Battle of Mactan"
@@ -101,10 +114,13 @@ const HistoryIn60Seconds: React.FC = () => {
                 <span className="mr-1">⭐</span> Lapu-Lapu's Victory
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/history-in-60-seconds/history-in-60-seconds-philippine-american-war"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Philippine-American War"
@@ -121,10 +137,13 @@ const HistoryIn60Seconds: React.FC = () => {
                 <span className="mr-1">⭐</span> First Republic
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/video-and-visuals-hub/history-in-60-seconds/history-in-60-seconds-philippine-independence"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Philippine Independence"
@@ -141,7 +160,7 @@ const HistoryIn60Seconds: React.FC = () => {
                 <span className="mr-1">⭐</span> June 12, 1898
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

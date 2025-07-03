@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FilipinoFusionCuisine: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const FilipinoFusionCuisine: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/filipino-fusion-cuisine/filipino-fusion-cuisine-adobo-tacos"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Adobo Tacos"
@@ -41,10 +45,13 @@ const FilipinoFusionCuisine: React.FC = () => {
                 <span className="mr-1">⭐</span> A Savory Twist
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/filipino-fusion-cuisine/filipino-fusion-cuisine-sinigang-ramen"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Sinigang Ramen"
@@ -61,10 +68,13 @@ const FilipinoFusionCuisine: React.FC = () => {
                 <span className="mr-1">⭐</span> Sour & Umami
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/filipino-fusion-cuisine/filipino-fusion-cuisine-ube-cheesecake"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Ube Cheesecake"
@@ -81,10 +91,13 @@ const FilipinoFusionCuisine: React.FC = () => {
                 <span className="mr-1">⭐</span> Sweet & Creamy
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/filipino-fusion-cuisine/filipino-fusion-cuisine-adobo-pizza"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Adobo Pizza"
@@ -101,10 +114,13 @@ const FilipinoFusionCuisine: React.FC = () => {
                 <span className="mr-1">⭐</span> Savory Fusion
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/filipino-fusion-cuisine/filipino-fusion-cuisine-buko-pandan-panna-cotta"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Buko Pandan Panna Cotta"
@@ -121,10 +137,13 @@ const FilipinoFusionCuisine: React.FC = () => {
                 <span className="mr-1">⭐</span> Tropical Delight
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/filipino-fusion-cuisine/filipino-fusion-cuisine-sisig-pizza"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Sisig Pizza"
@@ -141,7 +160,7 @@ const FilipinoFusionCuisine: React.FC = () => {
                 <span className="mr-1">⭐</span> Crispy & Savory
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

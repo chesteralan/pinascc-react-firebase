@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WeeklyFeaturedRecipes: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const WeeklyFeaturedRecipes: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/weekly-featured-recipes/weekly-featured-recipes-classic-chicken-adobo"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Adobo"
@@ -41,10 +45,13 @@ const WeeklyFeaturedRecipes: React.FC = () => {
                 <span className="mr-1">⭐</span> Filipino Staple
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/weekly-featured-recipes/weekly-featured-recipes-pork-sinigang"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Sinigang"
@@ -61,10 +68,13 @@ const WeeklyFeaturedRecipes: React.FC = () => {
                 <span className="mr-1">⭐</span> Sour & Savory Soup
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/weekly-featured-recipes/weekly-featured-recipes-lumpiang-shanghai"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Lumpia"
@@ -81,10 +91,13 @@ const WeeklyFeaturedRecipes: React.FC = () => {
                 <span className="mr-1">⭐</span> Crispy Spring Rolls
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/weekly-featured-recipes/weekly-featured-recipes-pancit-canton"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="Pancit Canton"
@@ -101,10 +114,13 @@ const WeeklyFeaturedRecipes: React.FC = () => {
                 <span className="mr-1">⭐</span> Stir-fried Noodles
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/weekly-featured-recipes/weekly-featured-recipes-bibingka"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Bibingka"
@@ -119,10 +135,13 @@ const WeeklyFeaturedRecipes: React.FC = () => {
                 <span className="mr-1">⭐</span> Christmas Rice Cake
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/food-and-recipes/weekly-featured-recipes/weekly-featured-recipes-halo-halo"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group block"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Halo-Halo"
@@ -139,7 +158,7 @@ const WeeklyFeaturedRecipes: React.FC = () => {
                 <span className="mr-1">⭐</span> Mixed Ice Dessert
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

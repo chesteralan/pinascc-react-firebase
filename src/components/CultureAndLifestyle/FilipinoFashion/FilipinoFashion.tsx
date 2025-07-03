@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FilipinoFashion: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const FilipinoFashion: React.FC = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/filipino-fashion/fashion-barong-tagalog"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             <img
               src="/images/gallery-1.jpg"
               alt="Barong Tagalog"
@@ -41,10 +45,13 @@ const FilipinoFashion: React.FC = () => {
                 <span className="mr-1">⭐</span> National Attire
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 2 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/filipino-fashion/fashion-terno"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             <img
               src="/images/gallery-2.jpg"
               alt="Terno"
@@ -59,10 +66,13 @@ const FilipinoFashion: React.FC = () => {
                 <span className="mr-1">⭐</span> Butterfly Sleeves
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 3 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/filipino-fashion/fashion-modern-filipiniana"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             <img
               src="/images/gallery-3.jpg"
               alt="Modern Filipiniana"
@@ -79,10 +89,13 @@ const FilipinoFashion: React.FC = () => {
                 <span className="mr-1">⭐</span> Everyday Elegance
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 5 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/filipino-fashion/fashion-tnalak-fabric"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             <img
               src="/images/gallery-5.jpg"
               alt="T'nalak Fabric"
@@ -99,10 +112,13 @@ const FilipinoFashion: React.FC = () => {
                 <span className="mr-1">⭐</span> Dreamweavers' Art
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 6 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/filipino-fashion/fashion-patadyong"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             <img
               src="/images/gallery-6.jpg"
               alt="Patadyong"
@@ -119,10 +135,13 @@ const FilipinoFashion: React.FC = () => {
                 <span className="mr-1">⭐</span> Visayan Wrap-around Skirt
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Card 4 (Vertical) */}
-          <div className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group">
+          <Link
+            to="/culture-and-lifestyle/filipino-fashion/fashion-indigenous-textiles"
+            className="relative bg-gray-100 rounded-lg shadow-lg overflow-hidden group"
+          >
             <img
               src="/images/gallery-4.jpg"
               alt="Indigenous Textiles"
@@ -139,7 +158,7 @@ const FilipinoFashion: React.FC = () => {
                 <span className="mr-1">⭐</span> Handwoven Art
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
