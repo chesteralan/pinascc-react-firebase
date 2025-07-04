@@ -16,6 +16,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
+
+      - name: Inject .env.production
+        run: echo "${{ secrets.ENV_PROD }}" > .env.production
+
       - run: npm install
       - run: npm run lint
       - run: npm run build
